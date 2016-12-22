@@ -1,0 +1,23 @@
+{
+  "name": "hexo-filter-github-emojis",
+  "version": "1.0.0",
+  "description": "A Hexo plugin that adds emojis support, using Github Emojis API",
+  "main": "index",
+  "repository": "crimx/hexo-filter-github-emojis",
+  "keywords": [
+    "hexo",
+    "hexo filter",
+    "hexo plugin",
+    "github emojis",
+    "github",
+    "emoji",
+    "emojis"
+  ],
+  "author": "CRIMX <straybugs@gmail.com> (http://blog.crimx.com)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "random-ua": "0.0.6",
+    "request": "^2.79.0"
+  }
+}
