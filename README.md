@@ -1,7 +1,5 @@
 # hexo-filter-github-emojis
 
-[![Build Status](https://travis-ci.org/crimx/hexo-filter-github-emojis.svg?branch=master)](https://travis-ci.org/crimx/hexo-filter-github-emojis)
-[![Coverage Status](https://img.shields.io/coveralls/crimx/hexo-filter-github-emojis.svg)](https://coveralls.io/r/crimx/hexo-filter-github-emojis?branch=master)
 [![Npm Version](https://img.shields.io/npm/v/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis) 
 [![Npm Downloads Month](https://img.shields.io/npm/dm/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis)
 [![Npm Downloads Total](https://img.shields.io/npm/dt/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis)
@@ -26,6 +24,7 @@ githubEmojis:
   enable: true
   className: github-emoji
   localEmojis:
+  unicode: false
 ```
 
 The filter will try to download the latest version of [Github Emojis][ghemojis] list. If the network is unavailable or too slow it will use the backup version.
@@ -45,6 +44,28 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
     localEmojis:
       arrow_left: https://path/tp/arrow_left.png
       arrow_right: https://path/tp/arrow_right.png
+  ```
+
+- **unicode** - If you set this option to true, the filter will generate something like this:
+
+  ```html
+  <span class="github-emoji" title=":sparkles:" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png">&#x2728;</span>
+  ```
+  Then you can fallback to image with JavaScript. For example, with jQuery:
+
+  ```javascript
+    $('span.github-emoji').each(function (i, emoji) {
+      var $emoji = $(emoji)
+      var codepoint = $emoji.html()
+      $('<img height="20" width="20">')
+        .prop('src', $emoji.data('src'))
+        .prop('alt', $emoji.attr('title'))
+        .on('error', function () {
+          // image loading failed
+          $emoji.html(codepoint)
+        })
+        .appendTo($emoji.empty())
+    })
   ```
 
 [ghemojis]: https://api.github.com/emojis

@@ -5,6 +5,7 @@ var _ = require('lodash')
 
 var options = _.assign({
   enable: true,
+  unicode: false,
   className: 'github-emoji'
 }, hexo.config.githubEmojis)
 
@@ -45,9 +46,20 @@ if (options.enable !== false) {
   hexo.extend.filter.register('before_post_render', function (data) {
     data.content = data.content.replace(/:(\w+):/ig, function (match, p1) {
       if (githubEmojis[p1]) {
-        return '<img class="' + options.className +
-        '" title="' + match + '" alt="' + match + '" src="' +
-        githubEmojis[p1] + '" height="20" width="20" />'
+        // unicode code point
+        var codepoint = /\/(\w+)\.\w+$/.exec(githubEmojis[p1].split('?')[0])
+        codepoint = codepoint && codepoint[1]
+
+        if (options.unicode && codepoint) {
+          return '<span class="' + options.className +
+            '" title="' + match +
+            '" data-src="' + githubEmojis[p1] +
+            '">&#x' + codepoint + ';</span>'
+        } else {
+          return '<img class="' + options.className +
+            '" title="' + match + '" alt="' + match + '" src="' +
+            githubEmojis[p1] + '" height="20" width="20" />'
+        }
       } else {
         return match
       }
