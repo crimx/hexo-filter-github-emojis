@@ -47,14 +47,18 @@ if (options.enable !== false) {
     data.content = data.content.replace(/:(\w+):/ig, function (match, p1) {
       if (githubEmojis[p1]) {
         // unicode code point
-        var codepoint = /\/(\w+)\.\w+$/.exec(githubEmojis[p1].split('?')[0])
+        var codepoint = /\/([\w-]+)\.\w+$/.exec(githubEmojis[p1].split('?')[0])
         codepoint = codepoint && codepoint[1]
 
         if (options.unicode && codepoint) {
+          codepoint = codepoint.split('-').map(function (item) {
+            return '&#x' + item + ';'
+          }).join('')
+
           return '<span class="' + options.className +
             '" title="' + match +
             '" data-src="' + githubEmojis[p1] +
-            '">&#x' + codepoint + ';</span>'
+            '">' + codepoint + '</span>'
         } else {
           return '<img class="' + options.className +
             '" title="' + match + '" alt="' + match + '" src="' +
