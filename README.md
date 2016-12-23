@@ -61,7 +61,7 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
 
   For example:
   
-  ``` yaml
+  ```yaml
   githubEmojis:
     localEmojis:
       arrow_left: https://path/to/arrow_left.png
@@ -70,11 +70,11 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
 
   If you need to add code points that are not in the Github list, you can do this:
 
-  ```
+  ```yaml
   githubEmojis:
     localEmojis:
       man_juggling:
-        src: https://path/to/arrow_left.png
+        src: https://path/to/man_juggling.png
         codepoints: ["1f939", "2642"]
       arrow_right: https://path/to/arrow_right.png
   ```
