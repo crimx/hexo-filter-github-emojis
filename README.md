@@ -23,8 +23,8 @@ You can configure this plugin in `_config.yml`. Default options:
 githubEmojis:
   enable: true
   className: github-emoji
-  localEmojis:
   unicode: false
+  localEmojis:
 ```
 
 The filter will try to download the latest version of [Github Emojis][ghemojis] list. If the network is unavailable or too slow it will use the backup version.
@@ -33,17 +33,6 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
 
   ```html
   <img class="github-emoji" title=":sparkles:" alt=":sparkles:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png" height="20" width="20">
-  ```
-
-- **localEmojis** - You can specify your own list. An object or JSON string is valid. The filter will first check the `localEmojis` then fallback to the [Github Emojis][ghemojis] list.
-
-  For example:
-  
-  ``` yaml
-  githubEmojis:
-    localEmojis:
-      arrow_left: https://path/tp/arrow_left.png
-      arrow_right: https://path/tp/arrow_right.png
   ```
 
 - **unicode** - If you set this option to true, the filter will generate something like this:
@@ -58,14 +47,36 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
       var $emoji = $(emoji)
       var codepoint = $emoji.html()
       $('<img height="20" width="20">')
-        .prop('src', $emoji.data('src'))
-        .prop('alt', $emoji.attr('title'))
         .on('error', function () {
           // image loading failed
           $emoji.html(codepoint)
         })
+        .prop('alt', $emoji.attr('title'))
+        .prop('src', $emoji.data('src'))
         .appendTo($emoji.empty())
     })
+  ```
+
+- **localEmojis** - You can specify your own list. An object or JSON string is valid. The filter will first check the `localEmojis` then fallback to the [Github Emojis][ghemojis] list.
+
+  For example:
+  
+  ``` yaml
+  githubEmojis:
+    localEmojis:
+      arrow_left: https://path/to/arrow_left.png
+      arrow_right: https://path/to/arrow_right.png
+  ```
+
+  If you need to add code points that are not in the Github list, you can do this:
+
+  ```
+  githubEmojis:
+    localEmojis:
+      man_juggling:
+        src: https://path/to/arrow_left.png
+        codepoints: ["1f939", "2642"]
+      arrow_right: https://path/to/arrow_right.png
   ```
 
 [ghemojis]: https://api.github.com/emojis

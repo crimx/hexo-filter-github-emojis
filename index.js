@@ -6,29 +6,48 @@ var _ = require('lodash')
 var options = _.assign({
   enable: true,
   unicode: false,
+  version: 'latest',
   className: 'github-emoji'
 }, hexo.config.githubEmojis)
 
 if (options.enable !== false) {
+  var path = require('path')
+  var url = require('url')
+  var fs = require('fs')
   var request = require('request')
   var randomUa = require('random-ua')
 
   // fallback
   var fallbackEmojis = require('./emojis.json')
 
+  // load custom emojis
   var localEmojis = options.localEmojis
-  if (_.isString(localEmojis)) {
+  // JSON string
+  if (!_.isObject(localEmojis)) {
     try {
-      localEmojis = JSON.parse(localEmojis)
+      localEmojis = JSON.parse(localEmojis.toString())
+      Object.keys(localEmojis).forEach(function (name) {
+        if (_.isString(localEmojis[name])) {
+          localEmojis[name] = {
+            src: localEmojis[name]
+          }
+        }
+      })
     } catch (SyntaxError) {
       localEmojis = {}
-      throw new Error('filter-github-emojis: local emojis parsing error')
+      console.warn('filter-github-emojis: local emojis error')
     }
   }
+  Object.keys(localEmojis).forEach(function (name) {
+    var codepoints = localEmojis[name].codepoints
+    if (codepoints && !_.isArray(codepoints)) {
+      localEmojis[name].codepoints = codepoints.split(' ')
+    }
+  })
 
-  var githubEmojis = _.assign(fallbackEmojis, localEmojis)
+  var emojis = _.assign(fallbackEmojis, localEmojis)
 
-  // get the lastest github version
+  // get the latest github version
   request({
     url: 'https://api.github.com/emojis',
     headers: {
@@ -38,31 +57,39 @@ if (options.enable !== false) {
   }, function (error, response, body) {
     if (!error && response.statusCode === 200) {
       if (_.isObject(body)) {
-        githubEmojis = _.assign(fallbackEmojis, body, localEmojis)
+        var latestEmojis = {}
+        Object.keys(body).forEach(function (name) {
+          latestEmojis[name] = { src: body[name] }
+          if (body[name].indexOf('unicode') !== -1) {
+            // list of unicode code points
+            latestEmojis[name].codepoints = path.parse(url.parse(body[name]).pathname).name.split('-')
+          }
+        })
+        var githubEmojis = _.assign(fallbackEmojis, latestEmojis)
+        emojis = _.assign(githubEmojis, localEmojis)
+        // update local backup
+        fs.writeFile(path.join(__dirname, 'emojis.json'), JSON.stringify(githubEmojis, null, '\t'))
       }
     }
   })
 
   hexo.extend.filter.register('before_post_render', function (data) {
     data.content = data.content.replace(/:(\w+):/ig, function (match, p1) {
-      if (githubEmojis[p1]) {
-        // unicode code point
-        var codepoint = /\/([\w-]+)\.\w+$/.exec(githubEmojis[p1].split('?')[0])
-        codepoint = codepoint && codepoint[1]
-
-        if (options.unicode && codepoint) {
-          codepoint = codepoint.split('-').map(function (item) {
-            return '&#x' + item + ';'
+      if (emojis[p1]) {
+        var codepoints = emojis[p1].codepoints
+        if (options.unicode && codepoints) {
+          codepoints = codepoints.map(function (code) {
+            return '&#x' + code + ';'
           }).join('')
 
           return '<span class="' + options.className +
             '" title="' + match +
-            '" data-src="' + githubEmojis[p1] +
-            '">' + codepoint + '</span>'
+            '" data-src="' + emojis[p1].src +
+            '">' + codepoints + '</span>'
         } else {
           return '<img class="' + options.className +
             '" title="' + match + '" alt="' + match + '" src="' +
-            githubEmojis[p1] + '" height="20" width="20" />'
+            emojis[p1].src + '" height="20" width="20" />'
         }
       } else {
         return match
