@@ -23,9 +23,9 @@ if (options.enable !== false) {
   // load custom emojis
   var localEmojis = options.localEmojis
   // JSON string
-  if (!_.isObject(localEmojis)) {
+  if (_.isString(localEmojis)) {
     try {
-      localEmojis = JSON.parse(localEmojis.toString())
+      localEmojis = JSON.parse(localEmojis)
       Object.keys(localEmojis).forEach(function (name) {
         if (_.isString(localEmojis[name])) {
           localEmojis[name] = {
@@ -37,6 +37,9 @@ if (options.enable !== false) {
       localEmojis = {}
       console.warn('filter-github-emojis: local emojis error')
     }
+  }
+  if (!_.isObject(localEmojis)) {
+    localEmojis = {}
   }
   Object.keys(localEmojis).forEach(function (name) {
     var codepoints = localEmojis[name].codepoints
