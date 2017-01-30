@@ -92,7 +92,7 @@ if (options.enable !== false) {
         } else {
           return '<img class="' + options.className +
             '" title="' + match + '" alt="' + match + '" src="' +
-            emojis[p1].src + '" height="20" width="20" />'
+            emojis[p1].src + '" height="20" width="20" style="display:inline" />'
         }
       } else {
         return match
