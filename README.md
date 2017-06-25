@@ -1,6 +1,6 @@
 # hexo-filter-github-emojis
 
-[![Npm Version](https://img.shields.io/npm/v/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis) 
+[![Npm Version](https://img.shields.io/npm/v/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis)
 [![Npm Downloads Month](https://img.shields.io/npm/dm/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis)
 [![Npm Downloads Total](https://img.shields.io/npm/dt/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis)
 [![License](https://img.shields.io/npm/l/hexo-filter-github-emojis.svg)](https://npmjs.org/package/hexo-filter-github-emojis)
@@ -60,7 +60,7 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
 - **localEmojis** - You can specify your own list. An object or JSON string is valid. The filter will first check the `localEmojis` then fallback to the [Github Emojis][ghemojis] list.
 
   For example:
-  
+
   ```yaml
   githubEmojis:
     localEmojis:
@@ -78,5 +78,13 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
         codepoints: ["1f939", "2642"]
       arrow_right: https://path/to/arrow_right.png
   ```
+
+## Helper
+
+You can also render a GitHub emoji from a template using the `github_emoji` helper:
+
+```html
+<h1><% github_emoji('octocat') %></h1>
+```
 
 [ghemojis]: https://api.github.com/emojis
