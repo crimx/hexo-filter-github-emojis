@@ -91,6 +91,10 @@ if (options.enable !== false) {
     return getRender(name)
   })
 
+  hexo.extend.tag.register('github_emoji', function(args){
+    return getRender(args[0])
+  })
+
   function getRender (emojiName) {
     emojiName = String(emojiName)
     if (!emojis[emojiName]) { return emojiName }
