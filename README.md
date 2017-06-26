@@ -24,12 +24,13 @@ githubEmojis:
   enable: true
   className: github-emoji
   unicode: false
+  styles:
   localEmojis:
 ```
 
 The filter will try to download the latest version of [Github Emojis][ghemojis] list. If the network is unavailable or too slow it will use the backup version.
 
-- **className** - Image class name. For `:sparkles:` the filter will generate something like this:
+- **className** - Image class name. For :sparkles: `:sparkles:` the filter will generate something like this:
 
   ```html
   <img class="github-emoji" title=":sparkles:" alt=":sparkles:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png" height="20" width="20">
@@ -57,6 +58,21 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
     })
   ```
 
+- **style** - inline styles for the images. For example:
+
+  ```yaml
+  githubEmojis:
+    styles:
+      display: inline
+      vertical-align: bottom
+  ```
+
+  outputs:
+
+  ```html
+  <img class="github-emoji" style="display:inline;vertical-align:bottom" ...>
+  ```
+
 - **localEmojis** - You can specify your own list. An object or JSON string is valid. The filter will first check the `localEmojis` then fallback to the [Github Emojis][ghemojis] list.
 
   For example:
@@ -78,6 +94,14 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
         codepoints: ["1f939", "2642"]
       arrow_right: https://path/to/arrow_right.png
   ```
+
+## Tag
+
+If you do not like the `::`-style keywords, you can always use tags:
+
+```html
+{% github_emoji sparkles %}
+```
 
 ## Helper
 
