@@ -88,28 +88,40 @@ if (options.enable !== false) {
   })
 
   hexo.extend.helper.register('github_emoji', function (name) {
-    return getRender(name);
-  });
+    return getRender(name)
+  })
 
   function getRender (emojiName) {
-    if (emojis[emojiName]) {
-      var codepoints = emojis[emojiName].codepoints
-      if (options.unicode && codepoints) {
-        codepoints = codepoints.map(function (code) {
-          return '&#x' + code + ';'
-        }).join('')
+    emojiName = String(emojiName)
+    if (!emojis[emojiName]) { return emojiName }
 
-        return '<span class="' + options.className +
-          '" title="' + emojiName +
-          '" data-src="' + emojis[emojiName].src +
-          '">' + codepoints + '</span>'
-      } else {
-        return '<img class="' + options.className +
-          '" title="' + emojiName + '" alt="' + emojiName + '" src="' +
-          emojis[emojiName].src + '" height="20" width="20" />'
-      }
+    var styles = ''
+    if (_.isObject(options.styles)) {
+      // inline styles
+      styles = 'style="' +
+        Object.keys(options.styles)
+        .filter(function (k) { return _.isString(options.styles[k]) })
+        .map(function (k) { return k + ':' + options.styles[k] })
+        .join(';') +
+        '"'
+    }
+
+    var codepoints = emojis[emojiName].codepoints
+    if (options.unicode && codepoints) {
+      codepoints = codepoints.map(function (code) {
+        return '&#x' + code + ';'
+      }).join('')
+
+      return '<span class="' + options.className + '" ' +
+        styles +
+        ' title="' + emojiName +
+        '" data-src="' + emojis[emojiName].src +
+        '">' + codepoints + '</span>'
     } else {
-      return emojiName;
+      return '<img class="' + options.className + '" ' +
+        styles +
+        ' title="' + emojiName + '" alt="' + emojiName + '" src="' +
+        emojis[emojiName].src + '" height="20" width="20" />'
     }
   }
 }
