@@ -58,7 +58,7 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
     })
   ```
 
-- **style** - inline styles for the images. For example:
+- **styles** - inline styles for the images. For example:
 
   ```yaml
   githubEmojis:
