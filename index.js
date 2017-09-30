@@ -71,7 +71,11 @@ if (options.enable !== false) {
         var githubEmojis = _.assign(fallbackEmojis, latestEmojis)
         emojis = _.assign(githubEmojis, localEmojis)
         // update local backup
-        fs.writeFile(path.join(__dirname, 'emojis.json'), JSON.stringify(githubEmojis, null, '\t'))
+        fs.writeFile(
+          path.join(__dirname, 'emojis.json'),
+          JSON.stringify(githubEmojis, null, '\t'),
+          function (err) { console.log(err) }
+        )
       }
     }
   })
