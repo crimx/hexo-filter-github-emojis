@@ -74,7 +74,7 @@ if (options.enable !== false) {
         fs.writeFile(
           path.join(__dirname, 'emojis.json'),
           JSON.stringify(githubEmojis, null, '\t'),
-          function (err) { console.log(err) }
+          function (err) { err && console.warn(err) }
         )
       }
     }
