@@ -81,6 +81,7 @@ if (options.enable !== false) {
   })
 
   hexo.extend.filter.register('before_post_render', function (data) {
+    if (data['no-emoji']) { return data }
     data.content = data.content.replace(/:(\w+):/ig, function (match, p1) {
       if (emojis[p1]) {
         return getRender(p1);

@@ -103,6 +103,19 @@ If you do not like the `::`-style keywords, you can always use tags:
 {% github_emoji sparkles %}
 ```
 
+Add `no-emoji: true` to front-matter to stop replacing `::`:
+
+```md
+---
+title: Hello World
+no-emoji: true
+---
+
+:tada: as it is.
+
+{% github_emoji tada %} still works.
+```
+
 ## Helper
 
 You can also render a GitHub emoji from a template using the `github_emoji` helper:
