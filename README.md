@@ -9,6 +9,8 @@ A Hexo plugin that adds emoji support, using [Github Emojis API][ghemojis].
 
 Check out the [Emoji Cheat Sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/) for all the emojis it supports.
 
+V2 is not compatible with [V1](https://github.com/crimx/hexo-filter-github-emojis/tree/e52ceb8b18a7b06916b6cb0a887b218d49a7ab92). V1 replaces codepoints with `<img>` tags. While V2 makes the font transparent and displays emojis with `background-image`.
+
 ## Installation
 
 ``` bash
@@ -23,63 +25,69 @@ You can configure this plugin in `_config.yml`. Default options:
 githubEmojis:
   enable: true
   className: github-emoji
-  unicode: false
+  inject: true
   styles:
-  localEmojis:
+  customEmojis:
 ```
 
-The filter will try to download the latest version of [Github Emojis][ghemojis] list. If the network is unavailable or too slow it will use the backup version.
-
-- **className** - Image class name. For :sparkles: `:sparkles:` the filter will generate something like this:
+- **className** - Image class name. For example :sparkles: `:sparkles:` the filter will generate something like this:
 
   ```html
-  <img class="github-emoji" title=":sparkles:" alt=":sparkles:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png" height="20" width="20">
+  <span class="github-emoji" style="background-image:url(https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png?v8">&#x2728;</span>
   ```
 
-- **unicode** - If you set this option to true, the filter will generate something like this:
+- **inject** - If true, the filter will inject proper inline styles and a script to fallback when image loading fails. If you can modify script files and style files, you may turn this off and add them yourself.
 
   ```html
-  <span class="github-emoji" title=":sparkles:" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2728.png">&#x2728;</span>
+  <span class="github-emoji" style="color:transparent;background:no-repeat url(...) center/contain" ...>
   ```
-  Then you can fallback to image with JavaScript. For example, with jQuery:
+  
+  A script tag will be appended, the className changes according to the options:
 
-  ```javascript
-    $('span.github-emoji').each(function (i, emoji) {
-      var $emoji = $(emoji)
-      var codepoint = $emoji.html()
-      $('<img height="20" width="20">')
-        .on('error', function () {
-          // image loading failed
-          $emoji.html(codepoint)
-        })
-        .prop('alt', $emoji.attr('title'))
-        .prop('src', $emoji.data('src'))
-        .appendTo($emoji.empty())
-    })
+  ```html
+    <script>
+      document.querySelectorAll('.github-emojis')
+        .forEach(el => {
+          if (!el.dataset.src) { return; }
+          const img = document.createElement('img');
+          img.style = 'display:none !important;';
+          img.src = el.dataset.src;
+          img.addEventListener('error', () => {
+            img.remove();
+            el.style.color = 'inherit';
+            el.style.backgroundImage = 'none';
+            el.style.background = 'none';
+          });
+          img.addEventListener('load', () => {
+            img.remove();
+          });
+          document.body.appendChild(img);
+        });
+    </script>
   ```
 
-- **styles** - inline styles for the images. For example:
+- **styles** - inline styles. For example:
 
   ```yaml
   githubEmojis:
     styles:
-      display: inline
-      vertical-align: bottom
+      font-size: 2em
+      font-weight: bold
   ```
 
   outputs:
 
   ```html
-  <img class="github-emoji" style="display:inline;vertical-align:bottom" ...>
+  <span class="github-emoji" style="font-size:2em;font-weight:bold;background-image:url(...)" ...>
   ```
 
-- **localEmojis** - You can specify your own list. An object or JSON string is valid. The filter will first check the `localEmojis` then fallback to the [Github Emojis][ghemojis] list.
+- **customEmojis** - You can specify your own list. An object or JSON string is valid. The filter will first check the `customEmojis` then fallback to the [Github Emojis][ghemojis] list.
 
   For example:
 
   ```yaml
   githubEmojis:
-    localEmojis:
+    customEmojis:
       arrow_left: https://path/to/arrow_left.png
       arrow_right: https://path/to/arrow_right.png
   ```
@@ -88,7 +96,7 @@ The filter will try to download the latest version of [Github Emojis][ghemojis] 
 
   ```yaml
   githubEmojis:
-    localEmojis:
+    customEmojis:
       man_juggling:
         src: https://path/to/man_juggling.png
         codepoints: ["1f939", "2642"]

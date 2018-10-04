@@ -1,136 +1,138 @@
 'use strict'
 /* global hexo */
 
-var _ = require('lodash')
+const _ = require('lodash')
+const path = require('path')
+const fs = require('fs')
+const cheerio = require('cheerio')
 
 var options = _.assign({
   enable: true,
-  unicode: false,
+  inject: true,
   version: 'latest',
-  className: 'github-emoji'
+  className: 'github-emoji',
 }, hexo.config.githubEmojis)
 
 if (options.enable !== false) {
-  var path = require('path')
-  var url = require('url')
-  var fs = require('fs')
-  var request = require('request')
-  var randomUa = require('random-ua')
+  const emojis = _.assign(
+    {},
+    require('./emojis.json'),
+    loadCustomEmojis(options.customEmojis || options.localEmojis),
+  )
 
-  // fallback
-  var fallbackEmojis = require('./emojis.json')
+  fs.writeFile(
+    path.join(__dirname, 'emojis.json'),
+    JSON.stringify(emojis, null, '  '),
+    function (err) { err && console.warn(err) },
+  )
 
-  // load custom emojis
-  var localEmojis = options.localEmojis
-  // JSON string
-  if (_.isString(localEmojis)) {
-    try {
-      localEmojis = JSON.parse(localEmojis)
-      Object.keys(localEmojis).forEach(function (name) {
-        if (_.isString(localEmojis[name])) {
-          localEmojis[name] = {
-            src: localEmojis[name]
-          }
-        }
-      })
-    } catch (SyntaxError) {
-      localEmojis = {}
-      console.warn('filter-github-emojis: local emojis error')
+  hexo.extend.filter.register('after_post_render', data => {
+    if (!options.inject && data['no-emoji']) { return data }
+
+    const $ = cheerio.load(data.content)
+
+    if (options.inject) {
+      $('body').append(`<script>
+        document.querySelectorAll('.${options.className}')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>`)
     }
-  }
-  if (!_.isObject(localEmojis)) {
-    localEmojis = {}
-  }
-  Object.keys(localEmojis).forEach(function (name) {
-    var codepoints = localEmojis[name].codepoints
-    if (codepoints && !_.isArray(codepoints)) {
-      localEmojis[name].codepoints = codepoints.split(' ')
+
+    if (!data['no-emoji']) {
+      replaceColons($('body')[0], $, emojis)
     }
-  })
 
-  var emojis = _.assign(fallbackEmojis, localEmojis)
-
-  // get the latest github version
-  request({
-    url: 'https://api.github.com/emojis',
-    headers: {
-      'User-Agent': randomUa.generate()
-    },
-    json: true
-  }, function (error, response, body) {
-    if (!error && response.statusCode === 200) {
-      if (_.isObject(body)) {
-        var latestEmojis = {}
-        Object.keys(body).forEach(function (name) {
-          latestEmojis[name] = { src: body[name] }
-          if (body[name].indexOf('unicode') !== -1) {
-            // list of unicode code points
-            latestEmojis[name].codepoints = path.parse(url.parse(body[name]).pathname).name.split('-')
-          }
-        })
-        var githubEmojis = _.assign(fallbackEmojis, latestEmojis)
-        emojis = _.assign(githubEmojis, localEmojis)
-        // update local backup
-        fs.writeFile(
-          path.join(__dirname, 'emojis.json'),
-          JSON.stringify(githubEmojis, null, '\t'),
-          function (err) { err && console.warn(err) }
-        )
-      }
-    }
-  })
-
-  hexo.extend.filter.register('before_post_render', function (data) {
-    if (data['no-emoji']) { return data }
-    data.content = data.content.replace(/:(\w+):/ig, function (match, p1) {
-      if (emojis[p1]) {
-        return getRender(p1);
-      } else {
-        return match
-      }
-    })
+    data.content = $('body').html()
     return data
   })
 
-  hexo.extend.helper.register('github_emoji', function (name) {
-    return getRender(name)
-  })
+  hexo.extend.helper.register('github_emoji', name => renderEmoji(emojis, name))
+  hexo.extend.tag.register('github_emoji', args => renderEmoji(emojis, args[0]))
+}
 
-  hexo.extend.tag.register('github_emoji', function(args){
-    return getRender(args[0])
-  })
-
-  function getRender (emojiName) {
-    emojiName = String(emojiName)
-    if (!emojis[emojiName]) { return emojiName }
-
-    var styles = ''
-    if (_.isObject(options.styles)) {
-      // inline styles
-      styles = 'style="' +
-        Object.keys(options.styles)
-        .filter(function (k) { return _.isString(options.styles[k]) })
-        .map(function (k) { return k + ':' + options.styles[k] })
-        .join(';') +
-        '"'
+function replaceColons (node, $, emojis) {
+  node.children.forEach(child => {
+    if (child.type === 'text') {
+      const content = child.data.replace(
+        /:(\w+):/ig,
+        (match, p1) => emojis[p1] ? renderEmoji(emojis, p1) : match,
+      )
+      if (content !== child.data) {
+        $(child).replaceWith($.parseHTML(content))
+      }
+    } else if (child.type === 'tag') {
+      if (child.name !== 'pre' && child.name !== 'code') {
+        replaceColons(child, $, emojis)
+      }
     }
+  })
+}
 
-    var codepoints = emojis[emojiName].codepoints
-    if (options.unicode && codepoints) {
-      codepoints = codepoints.map(function (code) {
-        return '&#x' + code + ';'
-      }).join('')
-
-      return '<span class="' + options.className + '" ' +
-        styles +
-        ' title="' + emojiName +
-        '" data-src="' + emojis[emojiName].src +
-        '">' + codepoints + '</span>'
-    } else {
-      return '<img class="' + options.className + '" ' +
-        styles +
-        ' title="' + emojiName + '" alt="' + emojiName + '" src="' +
-        emojis[emojiName].src + '" height="20" width="20" />'
+function loadCustomEmojis (customEmojis) {
+  // JSON string
+  if (_.isString(customEmojis)) {
+    try {
+      customEmojis = JSON.parse(customEmojis)
+      Object.keys(customEmojis).forEach(name => {
+        if (_.isString(customEmojis[name])) {
+          customEmojis[name] = {
+            src: customEmojis[name],
+          }
+        }
+      })
+    } catch (err) {
+      customEmojis = {}
+      console.warn('hexo-filter-github-emojis: Custom emojis not valid. Skipped.')
     }
   }
+
+  if (!_.isObject(customEmojis)) {
+    customEmojis = {}
+  }
+
+  Object.values(customEmojis).forEach(emoji => {
+    if (emoji.codepoints && !_.isArray(emoji.codepoints)) {
+      emoji.codepoints = emoji.codepoints.split(' ')
+    }
+  })
+}
+
+function renderEmoji (emojis, name) {
+  if (!emojis[name]) { return name }
+
+  const styles = _.isObject(options.styles)
+    ? Object.keys(options.styles)
+      .filter(k => _.isString(options.styles[k]))
+      .map(k => k + ':' + options.styles[k])
+    : []
+
+  if (options.inject) {
+    styles.push(
+      'color: transparent',
+      `background:no-repeat url(${emojis[name].src}) center/contain`,
+    )
+  } else {
+    styles.push(`background-image:url(${emojis[name].src})`)
+  }
+
+  const codepoints = emojis[name].codepoints
+    ? emojis[name].codepoints.map(c => `&#x${c};`).join('')
+    : ' '
+
+  return `<span class="${options.className}" style="${styles.join(';')}" data-src="${emojis[name].src}">${codepoints}</span>`
 }
