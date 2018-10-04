@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "8"
+script:
+  - node update-emojis.js
+after_success:
+  - bash push.sh

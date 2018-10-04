@@ -16,7 +16,7 @@ request({
   if (error || !_.isObject(json)) {
     console.error('Failded to download Github emojis.')
     console.log(error, response, json)
-    return
+    process.exit(1)
   }
 
   const latestEmojis = Object.keys(json).reduce((emojis, name) => {
@@ -39,6 +39,7 @@ request({
     function (err) {
       if (err) {
         console.warn(err)
+        process.exit(1)
       } else {
         console.log(`Update ${Object.keys(emojis).length} emojis`)
       }
