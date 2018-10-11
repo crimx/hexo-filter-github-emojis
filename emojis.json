@@ -9385,5 +9385,11 @@
   },
   "electron": {
     "src": "https://assets-cdn.github.com/images/icons/emoji/electron.png?v8"
+  },
+  "message": {
+    "src": "API rate limit exceeded for 104.154.113.151. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
+  },
+  "documentation_url": {
+    "src": "https://developer.github.com/v3/#rate-limiting"
   }
 }
