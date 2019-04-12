@@ -29,7 +29,7 @@ if (options.enable !== false) {
   hexo.extend.filter.register('after_post_render', data => {
     if (!options.inject && data['no-emoji']) { return data }
 
-    const $ = cheerio.load(data.content)
+    const $ = cheerio.load(data.content, {decodeEntities: false})
 
     if (options.inject) {
       $('body').append(`<script>
