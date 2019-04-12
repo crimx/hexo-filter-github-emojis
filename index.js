@@ -30,6 +30,7 @@ if (options.enable !== false) {
     if (!options.inject && data['no-emoji']) { return data }
 
     const $ = cheerio.load(data.content, {decodeEntities: false})
+    const excerpt = cheerio.load(data.excerpt,{decodeEntities: false})
 
     if (options.inject) {
       $('body').append(`<script>
@@ -55,9 +56,11 @@ if (options.enable !== false) {
 
     if (!data['no-emoji']) {
       replaceColons($('body')[0], $, emojis)
+      replaceColons(excerpt('body')[0], excerpt, emojis)
     }
 
     data.content = $('body').html()
+    data.excerpt = excerpt('body').html()
     return data
   })
 
