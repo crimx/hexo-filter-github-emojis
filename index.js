@@ -30,7 +30,7 @@ if (options.enable !== false) {
     if (!options.inject && data['no-emoji']) { return data }
 
     const $ = cheerio.load(data.content, {decodeEntities: false})
-    const excerpt = cheerio.load(data.excerpt,{decodeEntities: false})
+    const excerpt = cheerio.load(data.excerpt, {decodeEntities: false})
 
     if (options.inject) {
       $('body').append(`<script>
