@@ -19,8 +19,8 @@
   "author": "CRIMX <straybugs@gmail.com> (http://blog.crimx.com)",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "lodash": "^4.17.4",
+    "jsdom": "^15.1.1",
+    "lodash": "^4.17.15",
     "random-ua": "0.0.6",
     "request": "^2.83.0"
   }

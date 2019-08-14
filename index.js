@@ -4,7 +4,7 @@
 const _ = require('lodash')
 const path = require('path')
 const fs = require('fs')
-const cheerio = require('cheerio')
+const { JSDOM } = require('jsdom')
 
 var options = _.assign({
   enable: true,
@@ -29,11 +29,12 @@ if (options.enable !== false) {
   hexo.extend.filter.register('after_post_render', data => {
     if (!options.inject && data['no-emoji']) { return data }
 
-    const $ = cheerio.load(data.content, {decodeEntities: false})
-    const excerpt = cheerio.load(data.excerpt, {decodeEntities: false})
+    const $content = new JSDOM(data.content)
+    const $excerpt = new JSDOM(data.excerpt)
 
     if (options.inject) {
-      $('body').append(`<script>
+      const $script = $content.window.document.createElement('script')
+      $script.innerHTML = `
         document.querySelectorAll('.${options.className}')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -51,16 +52,17 @@ if (options.enable !== false) {
             });
             document.body.appendChild(img);
           });
-      </script>`)
+      `
+      $content.window.document.body.appendChild($script)
     }
 
     if (!data['no-emoji']) {
-      replaceColons($('body')[0], $, emojis)
-      replaceColons(excerpt('body')[0], excerpt, emojis)
+      replaceColons($content.window.document.body, emojis)
+      replaceColons($excerpt.window.document.body, emojis)
     }
 
-    data.content = $('body').html()
-    data.excerpt = excerpt('body').html()
+    data.content = $content.window.document.body.innerHTML
+    data.excerpt = $excerpt.window.document.body.innerHTML
     return data
   })
 
@@ -68,22 +70,23 @@ if (options.enable !== false) {
   hexo.extend.tag.register('github_emoji', args => renderEmoji(emojis, args[0]))
 }
 
-function replaceColons (node, $, emojis) {
-  node.children.forEach(child => {
-    if (child.type === 'text') {
+function replaceColons (node, emojis) {
+  if (!node || !node.childNodes) { return }
+  for (let i = node.childNodes.length - 1; i >= 0; i--) {
+    const child = node.childNodes[i]
+    if (child.tagName === 'PRE' || child.tagName === 'CODE') { return }
+    if (child.nodeType === 3) {
       const content = child.data.replace(
         /:(\w+):/ig,
         (match, p1) => emojis[p1] ? renderEmoji(emojis, p1) : match,
       )
       if (content !== child.data) {
-        $(child).replaceWith($.parseHTML(content))
+        child.replaceWith(JSDOM.fragment(content))
       }
-    } else if (child.type === 'tag') {
-      if (child.name !== 'pre' && child.name !== 'code') {
-        replaceColons(child, $, emojis)
-      }
+    } else {
+      replaceColons(child, emojis)
     }
-  })
+  }
 }
 
 function loadCustomEmojis (customEmojis) {
