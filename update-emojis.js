@@ -30,18 +30,16 @@ request({
     return emojis
   }, {})
 
-  const emojis = _.assign({}, require('./emojis.json'), latestEmojis)
-
   // update local backup
   fs.writeFile(
     path.join(__dirname, 'emojis.json'),
-    JSON.stringify(emojis, null, '  '),
+    JSON.stringify(latestEmojis, null, '  '),
     function (err) {
       if (err) {
         console.warn(err)
         process.exit(1)
       } else {
-        console.log(`Update ${Object.keys(emojis).length} emojis`)
+        console.log(`Update ${Object.keys(latestEmojis).length} emojis`)
       }
     },
   )

@@ -427,6 +427,9 @@
       "1f3e7"
     ]
   },
+  "atom": {
+    "src": "https://github.githubassets.com/images/icons/emoji/atom.png?v8"
+  },
   "atom_symbol": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/269b.png?v8",
     "codepoints": [
@@ -2638,6 +2641,9 @@
     "codepoints": [
       "1f50c"
     ]
+  },
+  "electron": {
+    "src": "https://github.githubassets.com/images/icons/emoji/electron.png?v8"
   },
   "elephant": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f418.png?v8",
@@ -7110,6 +7116,19 @@
       "1f1f9"
     ]
   },
+  "sassy_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f481-2642.png?v8",
+    "codepoints": [
+      "1f481",
+      "2642"
+    ]
+  },
+  "sassy_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f481.png?v8",
+    "codepoints": [
+      "1f481"
+    ]
+  },
   "satellite": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f4e1.png?v8",
     "codepoints": [
@@ -9379,17 +9398,5 @@
     "codepoints": [
       "1f4a4"
     ]
-  },
-  "atom": {
-    "src": "https://github.githubassets.com/images/icons/emoji/atom.png?v8"
-  },
-  "electron": {
-    "src": "https://github.githubassets.com/images/icons/emoji/electron.png?v8"
-  },
-  "message": {
-    "src": "API rate limit exceeded for 35.188.73.34. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)"
-  },
-  "documentation_url": {
-    "src": "https://developer.github.com/v3/#rate-limiting"
   }
 }
