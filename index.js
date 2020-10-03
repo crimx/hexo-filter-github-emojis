@@ -120,9 +120,9 @@ function renderEmoji(name) {
     : " ";
 
   return (
-    `<span class="${options.className}" aria-hidden="true"${styles}>` +
+    `<span class="${options.className}"${styles}>` +
     `<span>${codepoints}</span>` +
-    `<img src="${emojis[name].src}" onerror="this.parent.classList.add('${options.className}-fallback')">` +
+    `<img src="${emojis[name].src}" aria-hidden="true" onerror="this.parent.classList.add('${options.className}-fallback')">` +
     `</span>`
   );
 }
