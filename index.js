@@ -21,44 +21,33 @@ const emojis = Object.assign(
   loadCustomEmojis(options.customEmojis || options.localEmojis)
 );
 
-hexo.extend.helper.register("github_emoji", (name) =>
-  renderEmoji(emojis, name)
-);
+hexo.extend.helper.register("github_emoji", (name) => renderEmoji(name));
+hexo.extend.tag.register("github_emoji", (args) => renderEmoji(args[0]));
 
-hexo.extend.tag.register("github_emoji", (args) =>
-  renderEmoji(emojis, args[0])
-);
+if (options.inject !== false) {
+  hexo.extend.filter.register("after_render:html", (str) =>
+    str.replace("</head>", `\n<style>${getEmojiStyles()}</style>\n</head>`)
+  );
+}
 
-hexo.extend.filter.register("after_post_render", (data) => {
-  if (!options.enable || data["no-emoji"]) {
-    if (options.inject !== false) {
-      data.content = `<style>${getEmojiStyles()}</style>` + data.content;
+if (options.enable) {
+  hexo.extend.filter.register("after_post_render", (data) => {
+    if (!data["no-emoji"]) {
+      const $content = new JSDOM(data.content);
+      const $excerpt = new JSDOM(data.excerpt);
+
+      replaceColons($content.window.document.body);
+      replaceColons($excerpt.window.document.body);
+
+      data.content = $content.window.document.body.innerHTML;
+      data.excerpt = $excerpt.window.document.body.innerHTML;
     }
+
     return data;
-  }
+  });
+}
 
-  const $content = new JSDOM(data.content);
-  const $excerpt = new JSDOM(data.excerpt);
-
-  replaceColons($content.window.document.body, emojis);
-  replaceColons($excerpt.window.document.body, emojis);
-
-  if (options.inject !== false) {
-    const style = $content.window.document.createElement("style");
-    style.innerHTML = getEmojiStyles();
-    $content.window.document.body.insertBefore(
-      style,
-      $content.window.document.body.firstElementChild
-    );
-  }
-
-  data.content = $content.window.document.body.innerHTML;
-  data.excerpt = $excerpt.window.document.body.innerHTML;
-
-  return data;
-});
-
-function replaceColons(node, emojis) {
+function replaceColons(node) {
   if (!node || !node.childNodes) {
     return;
   }
@@ -69,13 +58,13 @@ function replaceColons(node, emojis) {
     }
     if (child.nodeType === 3) {
       const content = child.data.replace(/:(\w+):/gi, (match, p1) =>
-        emojis[p1] ? renderEmoji(emojis, p1) : match
+        emojis[p1] ? renderEmoji(p1) : match
       );
       if (content !== child.data) {
         child.replaceWith(JSDOM.fragment(content));
       }
     } else {
-      replaceColons(child, emojis);
+      replaceColons(child);
     }
   }
 }
@@ -117,7 +106,7 @@ function loadCustomEmojis(customEmojis) {
   }, {});
 }
 
-function renderEmoji(emojis, name) {
+function renderEmoji(name) {
   if (!emojis[name]) return name;
 
   const styles = _.isObject(options.styles)
