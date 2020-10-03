@@ -41,55 +41,53 @@ githubEmojis:
   If `true`, the filter will inject a `<style>` to the html.  
   If `false`, the filter will not inject any style. If you can modify source style files you may turn this off and add them yourself.  
   
-  Below is the injected `<style>`. The class name changes according to option.
+  Below are the injected styles. The class name changes according to option.
 
-  ```html
-  <style>
-    .github-emoji {
-      position: relative;
-      display: inline-block;
-      width: 1.2em;
-      min-height: 1.2em;
-      overflow: hidden;
-      vertical-align: top;
-      color: transparent;
-    }
+  ```css
+  .github-emoji {
+    position: relative;
+    display: inline-block;
+    width: 1.2em;
+    min-height: 1.2em;
+    overflow: hidden;
+    vertical-align: top;
+    color: transparent;
+  }
 
-    .github-emoji > span {
-      position: relative;
-      z-index: 10;
-    }
+  .github-emoji > span {
+    position: relative;
+    z-index: 10;
+  }
 
-    .github-emoji img,
-    .github-emoji .fancybox {
-      margin: 0 !important;
-      padding: 0 !important;
-      border: none !important;
-      outline: none !important;
-      text-decoration: none !important;
-      user-select: none !important;
-      cursor: auto !important;
-    }
+  .github-emoji img,
+  .github-emoji .fancybox {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    user-select: none !important;
+    cursor: auto !important;
+  }
 
-    .github-emoji img {
-      height: 1.2em !important;
-      width: 1.2em !important;
-      position: absolute !important;
-      left: 50% !important;
-      top: 50% !important;
-      transform: translate(-50%, -50%) !important;
-      user-select: none !important;
-      cursor: auto !important;
-    }
+  .github-emoji img {
+    height: 1.2em !important;
+    width: 1.2em !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    user-select: none !important;
+    cursor: auto !important;
+  }
 
-    .github-emoji-fallback {
-      color: inherit;
-    }
+  .github-emoji-fallback {
+    color: inherit;
+  }
 
-    .github-emoji-fallback img {
-      opacity: 0 !important;
-    }
-  </style>
+  .github-emoji-fallback img {
+    opacity: 0 !important;
+  }
   ```
 
 - **styles** `object={}` - inline styles. For example:
