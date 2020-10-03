@@ -1,144 +1,187 @@
-'use strict'
+"use strict";
 /* global hexo */
 
-const _ = require('lodash')
-const path = require('path')
-const fs = require('fs')
-const { JSDOM } = require('jsdom')
+const _ = require("lodash");
+const { JSDOM } = require("jsdom");
 
-var options = _.assign({
-  enable: true,
-  inject: true,
-  version: 'latest',
-  className: 'github-emoji',
-}, hexo.config.githubEmojis)
+const options = Object.assign(
+  {
+    enable: true,
+    inject: true,
+    version: "latest",
+    className: "github-emoji",
+  },
+  hexo.theme.githubEmojis || {},
+  hexo.config.githubEmojis || {}
+);
 
-if (options.enable !== false) {
-  const emojis = _.assign(
-    {},
-    require('./emojis.json'),
-    loadCustomEmojis(options.customEmojis || options.localEmojis),
-  )
+const emojis = Object.assign(
+  {},
+  require("./emojis.json"),
+  loadCustomEmojis(options.customEmojis || options.localEmojis)
+);
 
-  fs.writeFile(
-    path.join(__dirname, 'emojis.json'),
-    JSON.stringify(emojis, null, '  '),
-    function (err) { err && console.warn(err) },
-  )
+hexo.extend.helper.register("github_emoji", (name) =>
+  renderEmoji(emojis, name)
+);
 
-  hexo.extend.filter.register('after_post_render', data => {
-    if (!options.inject && data['no-emoji']) { return data }
+hexo.extend.tag.register("github_emoji", (args) =>
+  renderEmoji(emojis, args[0])
+);
 
-    const $content = new JSDOM(data.content)
-    const $excerpt = new JSDOM(data.excerpt)
+hexo.extend.filter.register("after_post_render", (data) => {
+  if (data["no-emoji"]) {
+    if (options.inject !== false) {
+      data.content = `<style>${getEmojiStyles()}</style>` + data.content;
+    }
+  } else {
+    const $content = new JSDOM(data.content);
+    const $excerpt = new JSDOM(data.excerpt);
 
-    if (options.inject) {
-      const $script = $content.window.document.createElement('script')
-      $script.innerHTML = `
-        document.querySelectorAll('.${options.className}')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      `
-      $content.window.document.body.appendChild($script)
+    replaceColons($content.window.document.body, emojis);
+    replaceColons($excerpt.window.document.body, emojis);
+
+    if (options.inject !== false) {
+      const style = $content.window.document.createElement("style");
+      style.innerHTML = getEmojiStyles();
+      $content.window.document.body.insertBefore(
+        style,
+        $content.window.document.body.firstElementChild
+      );
     }
 
-    if (!data['no-emoji']) {
-      replaceColons($content.window.document.body, emojis)
-      replaceColons($excerpt.window.document.body, emojis)
-    }
+    data.content = $content.window.document.body.innerHTML;
+    data.excerpt = $excerpt.window.document.body.innerHTML;
+  }
 
-    data.content = $content.window.document.body.innerHTML
-    data.excerpt = $excerpt.window.document.body.innerHTML
-    return data
-  })
+  return data;
+});
 
-  hexo.extend.helper.register('github_emoji', name => renderEmoji(emojis, name))
-  hexo.extend.tag.register('github_emoji', args => renderEmoji(emojis, args[0]))
-}
-
-function replaceColons (node, emojis) {
-  if (!node || !node.childNodes) { return }
+function replaceColons(node, emojis) {
+  if (!node || !node.childNodes) {
+    return;
+  }
   for (let i = node.childNodes.length - 1; i >= 0; i--) {
-    const child = node.childNodes[i]
-    if (child.tagName === 'PRE' || child.tagName === 'CODE') { return }
+    const child = node.childNodes[i];
+    if (child.tagName === "PRE" || child.tagName === "CODE") {
+      return;
+    }
     if (child.nodeType === 3) {
-      const content = child.data.replace(
-        /:(\w+):/ig,
-        (match, p1) => emojis[p1] ? renderEmoji(emojis, p1) : match,
-      )
+      const content = child.data.replace(/:(\w+):/gi, (match, p1) =>
+        emojis[p1] ? renderEmoji(emojis, p1) : match
+      );
       if (content !== child.data) {
-        child.replaceWith(JSDOM.fragment(content))
+        child.replaceWith(JSDOM.fragment(content));
       }
     } else {
-      replaceColons(child, emojis)
+      replaceColons(child, emojis);
     }
   }
 }
 
-function loadCustomEmojis (customEmojis) {
+function loadCustomEmojis(customEmojis) {
   // JSON string
   if (_.isString(customEmojis)) {
     try {
-      customEmojis = JSON.parse(customEmojis)
-      Object.keys(customEmojis).forEach(name => {
+      customEmojis = JSON.parse(customEmojis);
+      Object.keys(customEmojis).forEach((name) => {
         if (_.isString(customEmojis[name])) {
           customEmojis[name] = {
             src: customEmojis[name],
-          }
+          };
         }
-      })
+      });
     } catch (err) {
-      customEmojis = {}
-      console.warn('hexo-filter-github-emojis: Custom emojis not valid. Skipped.')
+      customEmojis = {};
+      console.warn(
+        "hexo-filter-github-emojis: Custom emojis not valid. Skipped."
+      );
     }
   }
 
   if (!_.isObject(customEmojis)) {
-    customEmojis = {}
+    customEmojis = {};
   }
 
-  Object.values(customEmojis).forEach(emoji => {
-    if (emoji.codepoints && !_.isArray(emoji.codepoints)) {
-      emoji.codepoints = emoji.codepoints.split(' ')
-    }
-  })
+  return Object.keys(customEmojis).reduce((emojis, name) => {
+    const emoji = customEmojis[name];
+    emojis[name] = Object.assign(
+      {},
+      emoji,
+      emoji.codepoints && !_.isArray(emoji.codepoints)
+        ? { codepoints: emoji.codepoints.split(" ") }
+        : {}
+    );
+    return emojis;
+  }, {});
 }
 
-function renderEmoji (emojis, name) {
-  if (!emojis[name]) { return name }
+function renderEmoji(emojis, name) {
+  if (!emojis[name]) return name;
 
   const styles = _.isObject(options.styles)
-    ? Object.keys(options.styles)
-      .filter(k => _.isString(options.styles[k]))
-      .map(k => k + ':' + options.styles[k])
-    : []
-
-  if (options.inject) {
-    styles.push(
-      'color: transparent',
-      `background:no-repeat url(${emojis[name].src}) center/contain`,
-    )
-  } else {
-    styles.push(`background-image:url(${emojis[name].src})`)
-  }
+    ? ` style="${Object.keys(options.styles)
+        .map((k) => k + ":" + options.styles[k])
+        .join(";")}"`
+    : "";
 
   const codepoints = emojis[name].codepoints
-    ? emojis[name].codepoints.map(c => `&#x${c};`).join('')
-    : ' '
+    ? emojis[name].codepoints.map((c) => `&#x${c};`).join("")
+    : " ";
 
-  return `<span class="${options.className}" style="${styles.join(';')}" data-src="${emojis[name].src}">${codepoints}</span>`
+  return (
+    `<span class="${options.className}" aria-hidden="true"${styles}>` +
+    `<span>${codepoints}</span>` +
+    `<img src="${emojis[name].src}" onerror="this.parent.classList.add('${options.className}-fallback')">` +
+    `</span>`
+  );
+}
+
+function getEmojiStyles() {
+  const rules = `.${options.className} {
+    position: relative;
+    display: inline-block;
+    width: 1.2em;
+    min-height: 1.2em;
+    overflow: hidden;
+    vertical-align: top;
+    color: transparent;
+  }
+  
+  .${options.className} > span {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .${options.className} img,
+  .${options.className} .fancybox {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    user-select: none !important;
+    cursor: auto !important;
+  }
+  
+  .${options.className} img {
+    height: 1.2em !important;
+    width: 1.2em !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    user-select: none !important;
+    cursor: auto !important;
+  }
+
+  .${options.className}-fallback {
+    color: inherit;
+  }
+
+  .${options.className}-fallback img {
+    opacity: 0 !important;
+  }`;
+
+  return rules.replace(/^ +/gm, ' ').replace(/\n/g, '')
 }
