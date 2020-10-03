@@ -30,8 +30,10 @@ hexo.extend.tag.register("github_emoji", (args) =>
 );
 
 hexo.extend.filter.register("after_post_render", (data) => {
-  if (options.inject !== false && (!options.enable || data["no-emoji"])) {
-    data.content = `<style>${getEmojiStyles()}</style>` + data.content;
+  if (!options.enable || data["no-emoji"]) {
+    if (options.inject !== false) {
+      data.content = `<style>${getEmojiStyles()}</style>` + data.content;
+    }
     return data;
   }
 
