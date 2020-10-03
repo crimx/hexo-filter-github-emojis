@@ -32,7 +32,7 @@ hexo.extend.tag.register("github_emoji", (args) =>
 hexo.extend.filter.register("after_post_render", (data) => {
   if (options.inject !== false && (!options.enable || data["no-emoji"])) {
     data.content = `<style>${getEmojiStyles()}</style>` + data.content;
-    return data
+    return data;
   }
 
   const $content = new JSDOM(data.content);
@@ -63,7 +63,7 @@ function replaceColons(node, emojis) {
   for (let i = node.childNodes.length - 1; i >= 0; i--) {
     const child = node.childNodes[i];
     if (child.tagName === "PRE" || child.tagName === "CODE") {
-      return;
+      continue;
     }
     if (child.nodeType === 3) {
       const content = child.data.replace(/:(\w+):/gi, (match, p1) =>
@@ -182,5 +182,5 @@ function getEmojiStyles() {
     opacity: 0 !important;
   }`;
 
-  return rules.replace(/^ +/gm, ' ').replace(/\n/g, '')
+  return rules.replace(/^ +/gm, " ").replace(/\n/g, "");
 }
