@@ -38,7 +38,7 @@ githubEmojis:
   ```
 
 - **inject** `boolean=true` - Inject emoji styles and fallback script.  
-  If `true`, the filter will inject a `<style>` to document `<head>`.  
+  If `true`, the filter will inject a `<style>` to the html.  
   If `false`, the filter will not inject any style. If you can modify source style files you may turn this off and add them yourself.  
   
   Below is the injected `<style>`. The class name changes according to option.

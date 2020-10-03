@@ -30,29 +30,28 @@ hexo.extend.tag.register("github_emoji", (args) =>
 );
 
 hexo.extend.filter.register("after_post_render", (data) => {
-  if (data["no-emoji"]) {
-    if (options.inject !== false) {
-      data.content = `<style>${getEmojiStyles()}</style>` + data.content;
-    }
-  } else {
-    const $content = new JSDOM(data.content);
-    const $excerpt = new JSDOM(data.excerpt);
-
-    replaceColons($content.window.document.body, emojis);
-    replaceColons($excerpt.window.document.body, emojis);
-
-    if (options.inject !== false) {
-      const style = $content.window.document.createElement("style");
-      style.innerHTML = getEmojiStyles();
-      $content.window.document.body.insertBefore(
-        style,
-        $content.window.document.body.firstElementChild
-      );
-    }
-
-    data.content = $content.window.document.body.innerHTML;
-    data.excerpt = $excerpt.window.document.body.innerHTML;
+  if (options.inject !== false && (!options.enable || data["no-emoji"])) {
+    data.content = `<style>${getEmojiStyles()}</style>` + data.content;
+    return data
   }
+
+  const $content = new JSDOM(data.content);
+  const $excerpt = new JSDOM(data.excerpt);
+
+  replaceColons($content.window.document.body, emojis);
+  replaceColons($excerpt.window.document.body, emojis);
+
+  if (options.inject !== false) {
+    const style = $content.window.document.createElement("style");
+    style.innerHTML = getEmojiStyles();
+    $content.window.document.body.insertBefore(
+      style,
+      $content.window.document.body.firstElementChild
+    );
+  }
+
+  data.content = $content.window.document.body.innerHTML;
+  data.excerpt = $excerpt.window.document.body.innerHTML;
 
   return data;
 });
