@@ -158,4 +158,30 @@ You can also render a GitHub emoji from a template using the `github_emoji` help
 <h1><%- github_emoji('octocat') %></h1>
 ```
 
+## Fancybox
+
+If you are using theme that enables fancybox(e.g. the default landscape theme) it is recommended to skip the github emoji imgs.
+
+Edit `themes/landscape/source/script.js`
+
+```diff
+   // Caption
+   $('.article-entry').each(function(i){
+     $(this).find('img').each(function(){
+       if ($(this).parent().hasClass('fancybox')) return;
++      if ($(this).parent().hasClass('github-emoji')) return;
+ 
+       var alt = this.alt;
+ 
+       if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+ 
+       $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+     });
+ 
+     $(this).find('.fancybox').each(function(){
+       $(this).attr('rel', 'article' + i);
+     });
+   });
+```
+
 [ghemojis]: https://api.github.com/emojis
