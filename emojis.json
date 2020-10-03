@@ -59,6 +59,12 @@
       "1f18e"
     ]
   },
+  "abacus": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ee.png?v8",
+    "codepoints": [
+      "1f9ee"
+    ]
+  },
   "abc": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f524.png?v8",
     "codepoints": [
@@ -75,6 +81,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f251.png?v8",
     "codepoints": [
       "1f251"
+    ]
+  },
+  "adhesive_bandage": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa79.png?v8",
+    "codepoints": [
+      "1fa79"
+    ]
+  },
+  "adult": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1.png?v8",
+    "codepoints": [
+      "1f9d1"
     ]
   },
   "aerial_tramway": {
@@ -395,11 +413,25 @@
       "1f6f0"
     ]
   },
+  "artist": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f3a8.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f3a8"
+    ]
+  },
   "aruba": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1fc.png?v8",
     "codepoints": [
       "1f1e6",
       "1f1fc"
+    ]
+  },
+  "ascension_island": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1e8.png?v8",
+    "codepoints": [
+      "1f1e6",
+      "1f1e8"
     ]
   },
   "asterisk": {
@@ -413,6 +445,13 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f632.png?v8",
     "codepoints": [
       "1f632"
+    ]
+  },
+  "astronaut": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f680.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f680"
     ]
   },
   "athletic_shoe": {
@@ -450,10 +489,22 @@
       "1f1f9"
     ]
   },
+  "auto_rickshaw": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6fa.png?v8",
+    "codepoints": [
+      "1f6fa"
+    ]
+  },
   "avocado": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f951.png?v8",
     "codepoints": [
       "1f951"
+    ]
+  },
+  "axe": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa93.png?v8",
+    "codepoints": [
+      "1fa93"
     ]
   },
   "azerbaijan": {
@@ -505,10 +556,22 @@
       "1f953"
     ]
   },
+  "badger": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a1.png?v8",
+    "codepoints": [
+      "1f9a1"
+    ]
+  },
   "badminton": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3f8.png?v8",
     "codepoints": [
       "1f3f8"
+    ]
+  },
+  "bagel": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f96f.png?v8",
+    "codepoints": [
+      "1f96f"
     ]
   },
   "baggage_claim": {
@@ -541,6 +604,26 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/2696.png?v8",
     "codepoints": [
       "2696"
+    ]
+  },
+  "bald_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f9b2.png?v8",
+    "codepoints": [
+      "1f468",
+      "1f9b2"
+    ]
+  },
+  "bald_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f9b2.png?v8",
+    "codepoints": [
+      "1f469",
+      "1f9b2"
+    ]
+  },
+  "ballet_shoes": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa70.png?v8",
+    "codepoints": [
+      "1fa70"
     ]
   },
   "balloon": {
@@ -586,6 +669,12 @@
       "1f1e9"
     ]
   },
+  "banjo": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa95.png?v8",
+    "codepoints": [
+      "1fa95"
+    ]
+  },
   "bank": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3e6.png?v8",
     "codepoints": [
@@ -623,6 +712,12 @@
   "basecampy": {
     "src": "https://github.githubassets.com/images/icons/emoji/basecampy.png?v8"
   },
+  "basket": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9fa.png?v8",
+    "codepoints": [
+      "1f9fa"
+    ]
+  },
   "basketball": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c0.png?v8",
     "codepoints": [
@@ -630,9 +725,10 @@
     ]
   },
   "basketball_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/26f9.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/26f9-2642.png?v8",
     "codepoints": [
-      "26f9"
+      "26f9",
+      "2642"
     ]
   },
   "basketball_woman": {
@@ -676,6 +772,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png?v8",
     "codepoints": [
       "1f43b"
+    ]
+  },
+  "bearded_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d4.png?v8",
+    "codepoints": [
+      "1f9d4"
     ]
   },
   "bed": {
@@ -767,6 +869,12 @@
       "1f1f2"
     ]
   },
+  "beverage_box": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c3.png?v8",
+    "codepoints": [
+      "1f9c3"
+    ]
+  },
   "bhutan": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1e7-1f1f9.png?v8",
     "codepoints": [
@@ -787,9 +895,10 @@
     ]
   },
   "biking_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6b4.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6b4-2642.png?v8",
     "codepoints": [
-      "1f6b4"
+      "1f6b4",
+      "2642"
     ]
   },
   "biking_woman": {
@@ -803,6 +912,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f459.png?v8",
     "codepoints": [
       "1f459"
+    ]
+  },
+  "billed_cap": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e2.png?v8",
+    "codepoints": [
+      "1f9e2"
     ]
   },
   "biohazard": {
@@ -883,10 +998,24 @@
       "1f532"
     ]
   },
-  "blonde_man": {
+  "blond_haired_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f471-2642.png?v8",
+    "codepoints": [
+      "1f471",
+      "2642"
+    ]
+  },
+  "blond_haired_person": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f471.png?v8",
     "codepoints": [
       "1f471"
+    ]
+  },
+  "blond_haired_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f471-2640.png?v8",
+    "codepoints": [
+      "1f471",
+      "2640"
     ]
   },
   "blonde_woman": {
@@ -926,6 +1055,12 @@
       "1f499"
     ]
   },
+  "blue_square": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e6.png?v8",
+    "codepoints": [
+      "1f7e6"
+    ]
+  },
   "blush": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png?v8",
     "codepoints": [
@@ -955,6 +1090,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f4a3.png?v8",
     "codepoints": [
       "1f4a3"
+    ]
+  },
+  "bone": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b4.png?v8",
+    "codepoints": [
+      "1f9b4"
     ]
   },
   "book": {
@@ -1007,10 +1148,37 @@
       "1f1fc"
     ]
   },
+  "bouncing_ball_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/26f9-2642.png?v8",
+    "codepoints": [
+      "26f9",
+      "2642"
+    ]
+  },
+  "bouncing_ball_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/26f9.png?v8",
+    "codepoints": [
+      "26f9"
+    ]
+  },
+  "bouncing_ball_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/26f9-2640.png?v8",
+    "codepoints": [
+      "26f9",
+      "2640"
+    ]
+  },
   "bouquet": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f490.png?v8",
     "codepoints": [
       "1f490"
+    ]
+  },
+  "bouvet_island": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1e7-1f1fb.png?v8",
+    "codepoints": [
+      "1f1e7",
+      "1f1fb"
     ]
   },
   "bow": {
@@ -1026,9 +1194,10 @@
     ]
   },
   "bowing_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f647.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f647-2642.png?v8",
     "codepoints": [
-      "1f647"
+      "1f647",
+      "2642"
     ]
   },
   "bowing_woman": {
@@ -1036,6 +1205,12 @@
     "codepoints": [
       "1f647",
       "2640"
+    ]
+  },
+  "bowl_with_spoon": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f963.png?v8",
+    "codepoints": [
+      "1f963"
     ]
   },
   "bowling": {
@@ -1059,6 +1234,12 @@
       "1f466"
     ]
   },
+  "brain": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e0.png?v8",
+    "codepoints": [
+      "1f9e0"
+    ]
+  },
   "brazil": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1e7-1f1f7.png?v8",
     "codepoints": [
@@ -1070,6 +1251,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f35e.png?v8",
     "codepoints": [
       "1f35e"
+    ]
+  },
+  "breast_feeding": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f931.png?v8",
+    "codepoints": [
+      "1f931"
+    ]
+  },
+  "bricks": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f1.png?v8",
+    "codepoints": [
+      "1f9f1"
     ]
   },
   "bride_with_veil": {
@@ -1104,10 +1297,40 @@
       "1f1ec"
     ]
   },
+  "broccoli": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f966.png?v8",
+    "codepoints": [
+      "1f966"
+    ]
+  },
   "broken_heart": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f494.png?v8",
     "codepoints": [
       "1f494"
+    ]
+  },
+  "broom": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f9.png?v8",
+    "codepoints": [
+      "1f9f9"
+    ]
+  },
+  "brown_circle": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e4.png?v8",
+    "codepoints": [
+      "1f7e4"
+    ]
+  },
+  "brown_heart": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f90e.png?v8",
+    "codepoints": [
+      "1f90e"
+    ]
+  },
+  "brown_square": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7eb.png?v8",
+    "codepoints": [
+      "1f7eb"
     ]
   },
   "brunei": {
@@ -1202,6 +1425,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f465.png?v8",
     "codepoints": [
       "1f465"
+    ]
+  },
+  "butter": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c8.png?v8",
+    "codepoints": [
+      "1f9c8"
     ]
   },
   "butterfly": {
@@ -1310,6 +1539,12 @@
       "1f36c"
     ]
   },
+  "canned_food": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f96b.png?v8",
+    "codepoints": [
+      "1f96b"
+    ]
+  },
   "canoe": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6f6.png?v8",
     "codepoints": [
@@ -1378,6 +1613,12 @@
       "1f955"
     ]
   },
+  "cartwheeling": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f938.png?v8",
+    "codepoints": [
+      "1f938"
+    ]
+  },
   "cat": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f431.png?v8",
     "codepoints": [
@@ -1410,6 +1651,13 @@
       "1f1eb"
     ]
   },
+  "ceuta_melilla": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1ea-1f1e6.png?v8",
+    "codepoints": [
+      "1f1ea",
+      "1f1e6"
+    ]
+  },
   "chad": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f9-1f1e9.png?v8",
     "codepoints": [
@@ -1421,6 +1669,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/26d3.png?v8",
     "codepoints": [
       "26d3"
+    ]
+  },
+  "chair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa91.png?v8",
+    "codepoints": [
+      "1fa91"
     ]
   },
   "champagne": {
@@ -1471,6 +1725,12 @@
       "1f338"
     ]
   },
+  "chess_pawn": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/265f.png?v8",
+    "codepoints": [
+      "265f"
+    ]
+  },
   "chestnut": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f330.png?v8",
     "codepoints": [
@@ -1481,6 +1741,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f414.png?v8",
     "codepoints": [
       "1f414"
+    ]
+  },
+  "child": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d2.png?v8",
+    "codepoints": [
+      "1f9d2"
     ]
   },
   "children_crossing": {
@@ -1506,6 +1772,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f36b.png?v8",
     "codepoints": [
       "1f36b"
+    ]
+  },
+  "chopsticks": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f962.png?v8",
+    "codepoints": [
+      "1f962"
     ]
   },
   "christmas_island": {
@@ -1587,6 +1859,26 @@
       "1f3db"
     ]
   },
+  "climbing": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d7.png?v8",
+    "codepoints": [
+      "1f9d7"
+    ]
+  },
+  "climbing_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d7-2642.png?v8",
+    "codepoints": [
+      "1f9d7",
+      "2642"
+    ]
+  },
+  "climbing_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d7-2640.png?v8",
+    "codepoints": [
+      "1f9d7",
+      "2640"
+    ]
+  },
   "clinking_glasses": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f942.png?v8",
     "codepoints": [
@@ -1597,6 +1889,13 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f4cb.png?v8",
     "codepoints": [
       "1f4cb"
+    ]
+  },
+  "clipperton_island": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1e8-1f1f5.png?v8",
+    "codepoints": [
+      "1f1e8",
+      "1f1f5"
     ]
   },
   "clock1": {
@@ -1810,10 +2109,22 @@
       "1f1f3"
     ]
   },
+  "coat": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e5.png?v8",
+    "codepoints": [
+      "1f9e5"
+    ]
+  },
   "cocktail": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f378.png?v8",
     "codepoints": [
       "1f378"
+    ]
+  },
+  "coconut": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f965.png?v8",
+    "codepoints": [
+      "1f965"
     ]
   },
   "cocos_islands": {
@@ -1833,6 +2144,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/26b0.png?v8",
     "codepoints": [
       "26b0"
+    ]
+  },
+  "cold_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f976.png?v8",
+    "codepoints": [
+      "1f976"
     ]
   },
   "cold_sweat": {
@@ -1865,6 +2182,12 @@
     "codepoints": [
       "1f1f0",
       "1f1f2"
+    ]
+  },
+  "compass": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ed.png?v8",
+    "codepoints": [
+      "1f9ed"
     ]
   },
   "computer": {
@@ -1930,9 +2253,10 @@
     ]
   },
   "construction_worker_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f477.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f477-2642.png?v8",
     "codepoints": [
-      "1f477"
+      "1f477",
+      "2642"
     ]
   },
   "construction_worker_woman": {
@@ -1952,6 +2276,13 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ea.png?v8",
     "codepoints": [
       "1f3ea"
+    ]
+  },
+  "cook": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f373.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f373"
     ]
   },
   "cook_islands": {
@@ -2032,9 +2363,11 @@
     ]
   },
   "couple_with_heart_woman_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f491.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-2764-1f468.png?v8",
     "codepoints": [
-      "1f491"
+      "1f469",
+      "2764",
+      "1f468"
     ]
   },
   "couple_with_heart_woman_woman": {
@@ -2043,6 +2376,12 @@
       "1f469",
       "2764",
       "1f469"
+    ]
+  },
+  "couplekiss": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f48f.png?v8",
+    "codepoints": [
+      "1f48f"
     ]
   },
   "couplekiss_man_man": {
@@ -2055,9 +2394,12 @@
     ]
   },
   "couplekiss_man_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f48f.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-2764-1f48b-1f468.png?v8",
     "codepoints": [
-      "1f48f"
+      "1f469",
+      "2764",
+      "1f48b",
+      "1f468"
     ]
   },
   "couplekiss_woman_woman": {
@@ -2112,6 +2454,12 @@
     ]
   },
   "cricket": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f997.png?v8",
+    "codepoints": [
+      "1f997"
+    ]
+  },
+  "cricket_game": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3cf.png?v8",
     "codepoints": [
       "1f3cf"
@@ -2191,6 +2539,18 @@
       "1f952"
     ]
   },
+  "cup_with_straw": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f964.png?v8",
+    "codepoints": [
+      "1f964"
+    ]
+  },
+  "cupcake": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c1.png?v8",
+    "codepoints": [
+      "1f9c1"
+    ]
+  },
   "cupid": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f498.png?v8",
     "codepoints": [
@@ -2202,6 +2562,26 @@
     "codepoints": [
       "1f1e8",
       "1f1fc"
+    ]
+  },
+  "curling_stone": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f94c.png?v8",
+    "codepoints": [
+      "1f94c"
+    ]
+  },
+  "curly_haired_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f9b1.png?v8",
+    "codepoints": [
+      "1f468",
+      "1f9b1"
+    ]
+  },
+  "curly_haired_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f9b1.png?v8",
+    "codepoints": [
+      "1f469",
+      "1f9b1"
     ]
   },
   "curly_loop": {
@@ -2222,6 +2602,12 @@
       "1f35b"
     ]
   },
+  "cursing_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f92c.png?v8",
+    "codepoints": [
+      "1f92c"
+    ]
+  },
   "custard": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f36e.png?v8",
     "codepoints": [
@@ -2232,6 +2618,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6c3.png?v8",
     "codepoints": [
       "1f6c3"
+    ]
+  },
+  "cut_of_meat": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f969.png?v8",
+    "codepoints": [
+      "1f969"
     ]
   },
   "cyclone": {
@@ -2280,9 +2672,10 @@
     ]
   },
   "dancing_women": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f46f.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f46f-2640.png?v8",
     "codepoints": [
-      "1f46f"
+      "1f46f",
+      "2640"
     ]
   },
   "dango": {
@@ -2320,6 +2713,26 @@
     "codepoints": [
       "1f1e9",
       "1f1ea"
+    ]
+  },
+  "deaf_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9cf-2642.png?v8",
+    "codepoints": [
+      "1f9cf",
+      "2642"
+    ]
+  },
+  "deaf_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9cf.png?v8",
+    "codepoints": [
+      "1f9cf"
+    ]
+  },
+  "deaf_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9cf-2640.png?v8",
+    "codepoints": [
+      "1f9cf",
+      "2640"
     ]
   },
   "deciduous_tree": {
@@ -2389,6 +2802,13 @@
       "2666"
     ]
   },
+  "diego_garcia": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1e9-1f1ec.png?v8",
+    "codepoints": [
+      "1f1e9",
+      "1f1ec"
+    ]
+  },
   "disappointed": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f61e.png?v8",
     "codepoints": [
@@ -2399,6 +2819,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f625.png?v8",
     "codepoints": [
       "1f625"
+    ]
+  },
+  "diving_mask": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f93f.png?v8",
+    "codepoints": [
+      "1f93f"
+    ]
+  },
+  "diya_lamp": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa94.png?v8",
+    "codepoints": [
+      "1fa94"
     ]
   },
   "dizzy": {
@@ -2418,6 +2850,12 @@
     "codepoints": [
       "1f1e9",
       "1f1ef"
+    ]
+  },
+  "dna": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ec.png?v8",
+    "codepoints": [
+      "1f9ec"
     ]
   },
   "do_not_litter": {
@@ -2518,6 +2956,12 @@
       "1f924"
     ]
   },
+  "drop_of_blood": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa78.png?v8",
+    "codepoints": [
+      "1fa78"
+    ]
+  },
   "droplet": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f4a7.png?v8",
     "codepoints": [
@@ -2534,6 +2978,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f986.png?v8",
     "codepoints": [
       "1f986"
+    ]
+  },
+  "dumpling": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f95f.png?v8",
+    "codepoints": [
+      "1f95f"
     ]
   },
   "dvd": {
@@ -2564,6 +3014,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f33e.png?v8",
     "codepoints": [
       "1f33e"
+    ]
+  },
+  "ear_with_hearing_aid": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9bb.png?v8",
+    "codepoints": [
+      "1f9bb"
     ]
   },
   "earth_africa": {
@@ -2629,6 +3085,12 @@
       "2733"
     ]
   },
+  "eject_button": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/23cf.png?v8",
+    "codepoints": [
+      "23cf"
+    ]
+  },
   "el_salvador": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1fb.png?v8",
     "codepoints": [
@@ -2651,6 +3113,26 @@
       "1f418"
     ]
   },
+  "elf": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9dd.png?v8",
+    "codepoints": [
+      "1f9dd"
+    ]
+  },
+  "elf_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9dd-2642.png?v8",
+    "codepoints": [
+      "1f9dd",
+      "2642"
+    ]
+  },
+  "elf_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9dd-2640.png?v8",
+    "codepoints": [
+      "1f9dd",
+      "2640"
+    ]
+  },
   "email": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/2709.png?v8",
     "codepoints": [
@@ -2661,6 +3143,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f51a.png?v8",
     "codepoints": [
       "1f51a"
+    ]
+  },
+  "england": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3f4-e0067-e0062-e0065-e006e-e0067-e007f.png?v8",
+    "codepoints": [
+      "1f3f4",
+      "e0067",
+      "e0062",
+      "e0065",
+      "e006e",
+      "e0067",
+      "e007f"
     ]
   },
   "envelope": {
@@ -2754,6 +3248,12 @@
       "2757"
     ]
   },
+  "exploding_head": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f92f.png?v8",
+    "codepoints": [
+      "1f92f"
+    ]
+  },
   "expressionless": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f611.png?v8",
     "codepoints": [
@@ -2797,6 +3297,12 @@
       "1f912"
     ]
   },
+  "facepalm": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f926.png?v8",
+    "codepoints": [
+      "1f926"
+    ]
+  },
   "facepunch": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f44a.png?v8",
     "codepoints": [
@@ -2807,6 +3313,39 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ed.png?v8",
     "codepoints": [
       "1f3ed"
+    ]
+  },
+  "factory_worker": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f3ed.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f3ed"
+    ]
+  },
+  "fairy": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9da.png?v8",
+    "codepoints": [
+      "1f9da"
+    ]
+  },
+  "fairy_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9da-2642.png?v8",
+    "codepoints": [
+      "1f9da",
+      "2642"
+    ]
+  },
+  "fairy_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9da-2640.png?v8",
+    "codepoints": [
+      "1f9da",
+      "2640"
+    ]
+  },
+  "falafel": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c6.png?v8",
+    "codepoints": [
+      "1f9c6"
     ]
   },
   "falkland_islands": {
@@ -2910,9 +3449,11 @@
     ]
   },
   "family_man_woman_boy": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f46a.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f469-1f466.png?v8",
     "codepoints": [
-      "1f46a"
+      "1f468",
+      "1f469",
+      "1f466"
     ]
   },
   "family_man_woman_boy_boy": {
@@ -3031,6 +3572,13 @@
       "1f467"
     ]
   },
+  "farmer": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f33e.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f33e"
+    ]
+  },
   "faroe_islands": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1eb-1f1f4.png?v8",
     "codepoints": [
@@ -3069,6 +3617,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f575-2640.png?v8",
     "codepoints": [
       "1f575",
+      "2640"
+    ]
+  },
+  "female_sign": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/2640.png?v8",
+    "codepoints": [
       "2640"
     ]
   },
@@ -3140,6 +3694,25 @@
   "fire_engine": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f692.png?v8",
     "codepoints": [
+      "1f692"
+    ]
+  },
+  "fire_extinguisher": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ef.png?v8",
+    "codepoints": [
+      "1f9ef"
+    ]
+  },
+  "firecracker": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e8.png?v8",
+    "codepoints": [
+      "1f9e8"
+    ]
+  },
+  "firefighter": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f692.png?v8",
+    "codepoints": [
+      "1f9d1",
       "1f692"
     ]
   },
@@ -3222,10 +3795,22 @@
       "1f38f"
     ]
   },
+  "flamingo": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a9.png?v8",
+    "codepoints": [
+      "1f9a9"
+    ]
+  },
   "flashlight": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f526.png?v8",
     "codepoints": [
       "1f526"
+    ]
+  },
+  "flat_shoe": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f97f.png?v8",
+    "codepoints": [
+      "1f97f"
     ]
   },
   "fleur_de_lis": {
@@ -3270,6 +3855,18 @@
       "1f633"
     ]
   },
+  "flying_disc": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f94f.png?v8",
+    "codepoints": [
+      "1f94f"
+    ]
+  },
+  "flying_saucer": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6f8.png?v8",
+    "codepoints": [
+      "1f6f8"
+    ]
+  },
   "fog": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f32b.png?v8",
     "codepoints": [
@@ -3280,6 +3877,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f301.png?v8",
     "codepoints": [
       "1f301"
+    ]
+  },
+  "foot": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b6.png?v8",
+    "codepoints": [
+      "1f9b6"
     ]
   },
   "football": {
@@ -3298,6 +3901,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f374.png?v8",
     "codepoints": [
       "1f374"
+    ]
+  },
+  "fortune_cookie": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f960.png?v8",
+    "codepoints": [
+      "1f960"
     ]
   },
   "fountain": {
@@ -3414,10 +4023,17 @@
       "2642"
     ]
   },
-  "frowning_woman": {
+  "frowning_person": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64d.png?v8",
     "codepoints": [
       "1f64d"
+    ]
+  },
+  "frowning_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64d-2640.png?v8",
+    "codepoints": [
+      "1f64d",
+      "2640"
     ]
   },
   "fu": {
@@ -3470,6 +4086,12 @@
       "1f3b2"
     ]
   },
+  "garlic": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c4.png?v8",
+    "codepoints": [
+      "1f9c4"
+    ]
+  },
   "gb": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1ec-1f1e7.png?v8",
     "codepoints": [
@@ -3493,6 +4115,26 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/264a.png?v8",
     "codepoints": [
       "264a"
+    ]
+  },
+  "genie": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9de.png?v8",
+    "codepoints": [
+      "1f9de"
+    ]
+  },
+  "genie_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9de-2642.png?v8",
+    "codepoints": [
+      "1f9de",
+      "2642"
+    ]
+  },
+  "genie_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9de-2640.png?v8",
+    "codepoints": [
+      "1f9de",
+      "2640"
     ]
   },
   "georgia": {
@@ -3534,6 +4176,12 @@
       "1f49d"
     ]
   },
+  "giraffe": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f992.png?v8",
+    "codepoints": [
+      "1f992"
+    ]
+  },
   "girl": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f467.png?v8",
     "codepoints": [
@@ -3544,6 +4192,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f310.png?v8",
     "codepoints": [
       "1f310"
+    ]
+  },
+  "gloves": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e4.png?v8",
+    "codepoints": [
+      "1f9e4"
     ]
   },
   "goal_net": {
@@ -3564,16 +4218,29 @@
   "godmode": {
     "src": "https://github.githubassets.com/images/icons/emoji/godmode.png?v8"
   },
+  "goggles": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f97d.png?v8",
+    "codepoints": [
+      "1f97d"
+    ]
+  },
   "golf": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/26f3.png?v8",
     "codepoints": [
       "26f3"
     ]
   },
-  "golfing_man": {
+  "golfing": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3cc.png?v8",
     "codepoints": [
       "1f3cc"
+    ]
+  },
+  "golfing_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3cc-2642.png?v8",
+    "codepoints": [
+      "1f3cc",
+      "2642"
     ]
   },
   "golfing_woman": {
@@ -3614,6 +4281,12 @@
       "1f4d7"
     ]
   },
+  "green_circle": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e2.png?v8",
+    "codepoints": [
+      "1f7e2"
+    ]
+  },
   "green_heart": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f49a.png?v8",
     "codepoints": [
@@ -3624,6 +4297,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f957.png?v8",
     "codepoints": [
       "1f957"
+    ]
+  },
+  "green_square": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e9.png?v8",
+    "codepoints": [
+      "1f7e9"
     ]
   },
   "greenland": {
@@ -3684,10 +4363,17 @@
       "1f1fa"
     ]
   },
-  "guardsman": {
+  "guard": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f482.png?v8",
     "codepoints": [
       "1f482"
+    ]
+  },
+  "guardsman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f482-2642.png?v8",
+    "codepoints": [
+      "1f482",
+      "2642"
     ]
   },
   "guardswoman": {
@@ -3709,6 +4395,12 @@
     "codepoints": [
       "1f1ec",
       "1f1ec"
+    ]
+  },
+  "guide_dog": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ae.png?v8",
+    "codepoints": [
+      "1f9ae"
     ]
   },
   "guinea": {
@@ -3758,9 +4450,10 @@
     ]
   },
   "haircut_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f487.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f487-2640.png?v8",
     "codepoints": [
-      "1f487"
+      "1f487",
+      "2640"
     ]
   },
   "haiti": {
@@ -3806,10 +4499,22 @@
       "270b"
     ]
   },
+  "hand_over_mouth": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f92d.png?v8",
+    "codepoints": [
+      "1f92d"
+    ]
+  },
   "handbag": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f45c.png?v8",
     "codepoints": [
       "1f45c"
+    ]
+  },
+  "handball_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f93e.png?v8",
+    "codepoints": [
+      "1f93e"
     ]
   },
   "handshake": {
@@ -3849,10 +4554,24 @@
       "1f3a7"
     ]
   },
+  "health_worker": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-2695.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "2695"
+    ]
+  },
   "hear_no_evil": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f649.png?v8",
     "codepoints": [
       "1f649"
+    ]
+  },
+  "heard_mcdonald_islands": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1ed-1f1f2.png?v8",
+    "codepoints": [
+      "1f1ed",
+      "1f1f2"
     ]
   },
   "heart": {
@@ -3945,6 +4664,12 @@
       "2795"
     ]
   },
+  "hedgehog": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f994.png?v8",
+    "codepoints": [
+      "1f994"
+    ]
+  },
   "helicopter": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f681.png?v8",
     "codepoints": [
@@ -3973,6 +4698,24 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f460.png?v8",
     "codepoints": [
       "1f460"
+    ]
+  },
+  "hiking_boot": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f97e.png?v8",
+    "codepoints": [
+      "1f97e"
+    ]
+  },
+  "hindu_temple": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6d5.png?v8",
+    "codepoints": [
+      "1f6d5"
+    ]
+  },
+  "hippopotamus": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f99b.png?v8",
+    "codepoints": [
+      "1f99b"
     ]
   },
   "hocho": {
@@ -4029,6 +4772,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3e5.png?v8",
     "codepoints": [
       "1f3e5"
+    ]
+  },
+  "hot_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f975.png?v8",
+    "codepoints": [
+      "1f975"
     ]
   },
   "hot_pepper": {
@@ -4113,6 +4862,12 @@
       "1f368"
     ]
   },
+  "ice_cube": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ca.png?v8",
+    "codepoints": [
+      "1f9ca"
+    ]
+  },
   "ice_hockey": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3d2.png?v8",
     "codepoints": [
@@ -4180,6 +4935,12 @@
     "codepoints": [
       "1f1ee",
       "1f1e9"
+    ]
+  },
+  "infinity": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/267e.png?v8",
+    "codepoints": [
+      "267e"
     ]
   },
   "information_desk_person": {
@@ -4310,6 +5071,12 @@
       "1f1ea"
     ]
   },
+  "jigsaw": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e9.png?v8",
+    "codepoints": [
+      "1f9e9"
+    ]
+  },
   "jordan": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1ef-1f1f4.png?v8",
     "codepoints": [
@@ -4342,10 +5109,29 @@
       "1f1f5"
     ]
   },
+  "judge": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-2696.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "2696"
+    ]
+  },
+  "juggling_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f939.png?v8",
+    "codepoints": [
+      "1f939"
+    ]
+  },
   "kaaba": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f54b.png?v8",
     "codepoints": [
       "1f54b"
+    ]
+  },
+  "kangaroo": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f998.png?v8",
+    "codepoints": [
+      "1f998"
     ]
   },
   "kazakhstan": {
@@ -4435,10 +5221,36 @@
       "1f619"
     ]
   },
+  "kite": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa81.png?v8",
+    "codepoints": [
+      "1fa81"
+    ]
+  },
   "kiwi_fruit": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f95d.png?v8",
     "codepoints": [
       "1f95d"
+    ]
+  },
+  "kneeling_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ce-2642.png?v8",
+    "codepoints": [
+      "1f9ce",
+      "2642"
+    ]
+  },
+  "kneeling_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ce.png?v8",
+    "codepoints": [
+      "1f9ce"
+    ]
+  },
+  "kneeling_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ce-2640.png?v8",
+    "codepoints": [
+      "1f9ce",
+      "2640"
     ]
   },
   "knife": {
@@ -4487,10 +5299,22 @@
       "1f1ec"
     ]
   },
+  "lab_coat": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f97c.png?v8",
+    "codepoints": [
+      "1f97c"
+    ]
+  },
   "label": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3f7.png?v8",
     "codepoints": [
       "1f3f7"
+    ]
+  },
+  "lacrosse": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f94d.png?v8",
+    "codepoints": [
+      "1f94d"
     ]
   },
   "lantern": {
@@ -4555,6 +5379,12 @@
       "1f606"
     ]
   },
+  "leafy_green": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f96c.png?v8",
+    "codepoints": [
+      "1f96c"
+    ]
+  },
   "leaves": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f343.png?v8",
     "codepoints": [
@@ -4586,10 +5416,22 @@
       "2194"
     ]
   },
+  "left_speech_bubble": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f5e8.png?v8",
+    "codepoints": [
+      "1f5e8"
+    ]
+  },
   "leftwards_arrow_with_hook": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/21a9.png?v8",
     "codepoints": [
       "21a9"
+    ]
+  },
+  "leg": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b5.png?v8",
+    "codepoints": [
+      "1f9b5"
     ]
   },
   "lemon": {
@@ -4693,6 +5535,18 @@
       "1f98e"
     ]
   },
+  "llama": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f999.png?v8",
+    "codepoints": [
+      "1f999"
+    ]
+  },
+  "lobster": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f99e.png?v8",
+    "codepoints": [
+      "1f99e"
+    ]
+  },
   "lock": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f512.png?v8",
     "codepoints": [
@@ -4715,6 +5569,32 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/27bf.png?v8",
     "codepoints": [
       "27bf"
+    ]
+  },
+  "lotion_bottle": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f4.png?v8",
+    "codepoints": [
+      "1f9f4"
+    ]
+  },
+  "lotus_position": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d8.png?v8",
+    "codepoints": [
+      "1f9d8"
+    ]
+  },
+  "lotus_position_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d8-2642.png?v8",
+    "codepoints": [
+      "1f9d8",
+      "2642"
+    ]
+  },
+  "lotus_position_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d8-2640.png?v8",
+    "codepoints": [
+      "1f9d8",
+      "2640"
     ]
   },
   "loud_sound": {
@@ -4741,10 +5621,22 @@
       "1f48c"
     ]
   },
+  "love_you_gesture": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f91f.png?v8",
+    "codepoints": [
+      "1f91f"
+    ]
+  },
   "low_brightness": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f505.png?v8",
     "codepoints": [
       "1f505"
+    ]
+  },
+  "luggage": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f3.png?v8",
+    "codepoints": [
+      "1f9f3"
     ]
   },
   "luxembourg": {
@@ -4799,6 +5691,32 @@
       "1f50e"
     ]
   },
+  "mage": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d9.png?v8",
+    "codepoints": [
+      "1f9d9"
+    ]
+  },
+  "mage_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d9-2642.png?v8",
+    "codepoints": [
+      "1f9d9",
+      "2642"
+    ]
+  },
+  "mage_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d9-2640.png?v8",
+    "codepoints": [
+      "1f9d9",
+      "2640"
+    ]
+  },
+  "magnet": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f2.png?v8",
+    "codepoints": [
+      "1f9f2"
+    ]
+  },
   "mahjong": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f004.png?v8",
     "codepoints": [
@@ -4851,9 +5769,16 @@
     ]
   },
   "male_detective": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f575.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f575-2642.png?v8",
     "codepoints": [
-      "1f575"
+      "1f575",
+      "2642"
+    ]
+  },
+  "male_sign": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/2642.png?v8",
+    "codepoints": [
+      "2642"
     ]
   },
   "mali": {
@@ -4943,6 +5868,20 @@
     "codepoints": [
       "1f468",
       "2695"
+    ]
+  },
+  "man_in_manual_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f9bd.png?v8",
+    "codepoints": [
+      "1f468",
+      "1f9bd"
+    ]
+  },
+  "man_in_motorized_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f9bc.png?v8",
+    "codepoints": [
+      "1f468",
+      "1f9bc"
     ]
   },
   "man_in_tuxedo": {
@@ -5048,16 +5987,30 @@
       "1f472"
     ]
   },
-  "man_with_turban": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f473.png?v8",
+  "man_with_probing_cane": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f9af.png?v8",
     "codepoints": [
-      "1f473"
+      "1f468",
+      "1f9af"
+    ]
+  },
+  "man_with_turban": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f473-2642.png?v8",
+    "codepoints": [
+      "1f473",
+      "2642"
     ]
   },
   "mandarin": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f34a.png?v8",
     "codepoints": [
       "1f34a"
+    ]
+  },
+  "mango": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f96d.png?v8",
+    "codepoints": [
+      "1f96d"
     ]
   },
   "mans_shoe": {
@@ -5070,6 +6023,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f570.png?v8",
     "codepoints": [
       "1f570"
+    ]
+  },
+  "manual_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9bd.png?v8",
+    "codepoints": [
+      "1f9bd"
     ]
   },
   "maple_leaf": {
@@ -5118,9 +6077,16 @@
     ]
   },
   "massage_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f486.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f486-2640.png?v8",
     "codepoints": [
-      "1f486"
+      "1f486",
+      "2640"
+    ]
+  },
+  "mate": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c9.png?v8",
+    "codepoints": [
+      "1f9c9"
     ]
   },
   "mauritania": {
@@ -5150,6 +6116,25 @@
       "1f356"
     ]
   },
+  "mechanic": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f527.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f527"
+    ]
+  },
+  "mechanical_arm": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9be.png?v8",
+    "codepoints": [
+      "1f9be"
+    ]
+  },
+  "mechanical_leg": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9bf.png?v8",
+    "codepoints": [
+      "1f9bf"
+    ]
+  },
   "medal_military": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f396.png?v8",
     "codepoints": [
@@ -5160,6 +6145,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c5.png?v8",
     "codepoints": [
       "1f3c5"
+    ]
+  },
+  "medical_symbol": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/2695.png?v8",
+    "codepoints": [
+      "2695"
     ]
   },
   "mega": {
@@ -5199,6 +6190,26 @@
       "1f6b9"
     ]
   },
+  "mermaid": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9dc-2640.png?v8",
+    "codepoints": [
+      "1f9dc",
+      "2640"
+    ]
+  },
+  "merman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9dc-2642.png?v8",
+    "codepoints": [
+      "1f9dc",
+      "2642"
+    ]
+  },
+  "merperson": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9dc.png?v8",
+    "codepoints": [
+      "1f9dc"
+    ]
+  },
   "metal": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f918.png?v8",
     "codepoints": [
@@ -5216,6 +6227,12 @@
     "codepoints": [
       "1f1f2",
       "1f1fd"
+    ]
+  },
+  "microbe": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a0.png?v8",
+    "codepoints": [
+      "1f9a0"
     ]
   },
   "micronesia": {
@@ -5324,6 +6341,12 @@
       "1f435"
     ]
   },
+  "monocle_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d0.png?v8",
+    "codepoints": [
+      "1f9d0"
+    ]
+  },
   "monorail": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f69d.png?v8",
     "codepoints": [
@@ -5350,6 +6373,12 @@
       "1f314"
     ]
   },
+  "moon_cake": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f96e.png?v8",
+    "codepoints": [
+      "1f96e"
+    ]
+  },
   "morocco": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f2-1f1e6.png?v8",
     "codepoints": [
@@ -5369,6 +6398,12 @@
       "1f54c"
     ]
   },
+  "mosquito": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f99f.png?v8",
+    "codepoints": [
+      "1f99f"
+    ]
+  },
   "motor_boat": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6e5.png?v8",
     "codepoints": [
@@ -5385,6 +6420,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3cd.png?v8",
     "codepoints": [
       "1f3cd"
+    ]
+  },
+  "motorized_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9bc.png?v8",
+    "codepoints": [
+      "1f9bc"
     ]
   },
   "motorway": {
@@ -5412,9 +6453,10 @@
     ]
   },
   "mountain_biking_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6b5.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6b5-2642.png?v8",
     "codepoints": [
-      "1f6b5"
+      "1f6b5",
+      "2642"
     ]
   },
   "mountain_biking_woman": {
@@ -5560,6 +6602,12 @@
       "1f922"
     ]
   },
+  "nazar_amulet": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ff.png?v8",
+    "codepoints": [
+      "1f9ff"
+    ]
+  },
   "neckbeard": {
     "src": "https://github.githubassets.com/images/icons/emoji/neckbeard.png?v8"
   },
@@ -5665,9 +6713,10 @@
     ]
   },
   "ng_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f645.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f645-2640.png?v8",
     "codepoints": [
-      "1f645"
+      "1f645",
+      "2640"
     ]
   },
   "nicaragua": {
@@ -5749,9 +6798,10 @@
     ]
   },
   "no_good_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f645.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f645-2640.png?v8",
     "codepoints": [
-      "1f645"
+      "1f645",
+      "2640"
     ]
   },
   "no_mobile_phones": {
@@ -5881,6 +6931,13 @@
       "1f3e2"
     ]
   },
+  "office_worker": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f4bc.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f4bc"
+    ]
+  },
   "oil_drum": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6e2.png?v8",
     "codepoints": [
@@ -5906,16 +6963,29 @@
       "2642"
     ]
   },
-  "ok_woman": {
+  "ok_person": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f646.png?v8",
     "codepoints": [
       "1f646"
+    ]
+  },
+  "ok_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f646-2640.png?v8",
+    "codepoints": [
+      "1f646",
+      "2640"
     ]
   },
   "old_key": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f5dd.png?v8",
     "codepoints": [
       "1f5dd"
+    ]
+  },
+  "older_adult": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d3.png?v8",
+    "codepoints": [
+      "1f9d3"
     ]
   },
   "older_man": {
@@ -5980,6 +7050,18 @@
       "20e3"
     ]
   },
+  "one_piece_swimsuit": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa71.png?v8",
+    "codepoints": [
+      "1fa71"
+    ]
+  },
+  "onion": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c5.png?v8",
+    "codepoints": [
+      "1f9c5"
+    ]
+  },
   "open_book": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8",
     "codepoints": [
@@ -6028,10 +7110,40 @@
       "1f4d9"
     ]
   },
+  "orange_circle": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e0.png?v8",
+    "codepoints": [
+      "1f7e0"
+    ]
+  },
+  "orange_heart": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e1.png?v8",
+    "codepoints": [
+      "1f9e1"
+    ]
+  },
+  "orange_square": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e7.png?v8",
+    "codepoints": [
+      "1f7e7"
+    ]
+  },
+  "orangutan": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a7.png?v8",
+    "codepoints": [
+      "1f9a7"
+    ]
+  },
   "orthodox_cross": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/2626.png?v8",
     "codepoints": [
       "2626"
+    ]
+  },
+  "otter": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a6.png?v8",
+    "codepoints": [
+      "1f9a6"
     ]
   },
   "outbox_tray": {
@@ -6050,6 +7162,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f402.png?v8",
     "codepoints": [
       "1f402"
+    ]
+  },
+  "oyster": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9aa.png?v8",
+    "codepoints": [
+      "1f9aa"
     ]
   },
   "package": {
@@ -6109,6 +7227,12 @@
       "1f334"
     ]
   },
+  "palms_up_together": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f932.png?v8",
+    "codepoints": [
+      "1f932"
+    ]
+  },
   "panama": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f5-1f1e6.png?v8",
     "codepoints": [
@@ -6147,6 +7271,12 @@
       "1f1ec"
     ]
   },
+  "parachute": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa82.png?v8",
+    "codepoints": [
+      "1fa82"
+    ]
+  },
   "paraguay": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f5-1f1fe.png?v8",
     "codepoints": [
@@ -6166,6 +7296,12 @@
       "1f17f"
     ]
   },
+  "parrot": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f99c.png?v8",
+    "codepoints": [
+      "1f99c"
+    ]
+  },
   "part_alternation_mark": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/303d.png?v8",
     "codepoints": [
@@ -6176,6 +7312,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/26c5.png?v8",
     "codepoints": [
       "26c5"
+    ]
+  },
+  "partying_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f973.png?v8",
+    "codepoints": [
+      "1f973"
     ]
   },
   "passenger_ship": {
@@ -6212,6 +7354,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f351.png?v8",
     "codepoints": [
       "1f351"
+    ]
+  },
+  "peacock": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f99a.png?v8",
+    "codepoints": [
+      "1f99a"
     ]
   },
   "peanuts": {
@@ -6256,6 +7404,14 @@
       "1f614"
     ]
   },
+  "people_holding_hands": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f91d-1f9d1.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f91d",
+      "1f9d1"
+    ]
+  },
   "performing_arts": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ad.png?v8",
     "codepoints": [
@@ -6268,28 +7424,65 @@
       "1f623"
     ]
   },
+  "person_bald": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f9b2.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f9b2"
+    ]
+  },
+  "person_curly_hair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f9b1.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f9b1"
+    ]
+  },
   "person_fencing": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f93a.png?v8",
     "codepoints": [
       "1f93a"
     ]
   },
-  "person_frowning": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64d.png?v8",
+  "person_in_manual_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f9bd.png?v8",
     "codepoints": [
-      "1f64d"
+      "1f9d1",
+      "1f9bd"
     ]
   },
-  "person_with_blond_hair": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f471.png?v8",
+  "person_in_motorized_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f9bc.png?v8",
     "codepoints": [
-      "1f471"
+      "1f9d1",
+      "1f9bc"
     ]
   },
-  "person_with_pouting_face": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64e.png?v8",
+  "person_red_hair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f9b0.png?v8",
     "codepoints": [
-      "1f64e"
+      "1f9d1",
+      "1f9b0"
+    ]
+  },
+  "person_white_hair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f9b3.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f9b3"
+    ]
+  },
+  "person_with_probing_cane": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f9af.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f9af"
+    ]
+  },
+  "person_with_turban": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f473.png?v8",
+    "codepoints": [
+      "1f473"
     ]
   },
   "peru": {
@@ -6297,6 +7490,12 @@
     "codepoints": [
       "1f1f5",
       "1f1ea"
+    ]
+  },
+  "petri_dish": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9eb.png?v8",
+    "codepoints": [
+      "1f9eb"
     ]
   },
   "philippines": {
@@ -6316,6 +7515,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/26cf.png?v8",
     "codepoints": [
       "26cf"
+    ]
+  },
+  "pie": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f967.png?v8",
+    "codepoints": [
+      "1f967"
     ]
   },
   "pig": {
@@ -6342,6 +7547,19 @@
       "1f48a"
     ]
   },
+  "pilot": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-2708.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "2708"
+    ]
+  },
+  "pinching_hand": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f90f.png?v8",
+    "codepoints": [
+      "1f90f"
+    ]
+  },
   "pineapple": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f34d.png?v8",
     "codepoints": [
@@ -6352,6 +7570,13 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3d3.png?v8",
     "codepoints": [
       "1f3d3"
+    ]
+  },
+  "pirate_flag": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3f4-2620.png?v8",
+    "codepoints": [
+      "1f3f4",
+      "2620"
     ]
   },
   "pisces": {
@@ -6389,6 +7614,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/23ef.png?v8",
     "codepoints": [
       "23ef"
+    ]
+  },
+  "pleading_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f97a.png?v8",
+    "codepoints": [
+      "1f97a"
     ]
   },
   "point_down": {
@@ -6434,10 +7665,17 @@
       "1f693"
     ]
   },
-  "policeman": {
+  "police_officer": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f46e.png?v8",
     "codepoints": [
       "1f46e"
+    ]
+  },
+  "policeman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f46e-2642.png?v8",
+    "codepoints": [
+      "1f46e",
+      "2642"
     ]
   },
   "policewoman": {
@@ -6532,6 +7770,12 @@
       "1f63e"
     ]
   },
+  "pouting_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64e.png?v8",
+    "codepoints": [
+      "1f64e"
+    ]
+  },
   "pouting_man": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64e-2642.png?v8",
     "codepoints": [
@@ -6540,9 +7784,10 @@
     ]
   },
   "pouting_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64e.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64e-2640.png?v8",
     "codepoints": [
-      "1f64e"
+      "1f64e",
+      "2640"
     ]
   },
   "pray": {
@@ -6561,6 +7806,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f930.png?v8",
     "codepoints": [
       "1f930"
+    ]
+  },
+  "pretzel": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f968.png?v8",
+    "codepoints": [
+      "1f968"
     ]
   },
   "previous_track_button": {
@@ -6587,6 +7838,12 @@
       "1f5a8"
     ]
   },
+  "probing_cane": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9af.png?v8",
+    "codepoints": [
+      "1f9af"
+    ]
+  },
   "puerto_rico": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f5-1f1f7.png?v8",
     "codepoints": [
@@ -6600,10 +7857,22 @@
       "1f44a"
     ]
   },
+  "purple_circle": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e3.png?v8",
+    "codepoints": [
+      "1f7e3"
+    ]
+  },
   "purple_heart": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f49c.png?v8",
     "codepoints": [
       "1f49c"
+    ]
+  },
+  "purple_square": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7ea.png?v8",
+    "codepoints": [
+      "1f7ea"
     ]
   },
   "purse": {
@@ -6647,6 +7916,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f407.png?v8",
     "codepoints": [
       "1f407"
+    ]
+  },
+  "raccoon": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f99d.png?v8",
+    "codepoints": [
+      "1f99d"
     ]
   },
   "racehorse": {
@@ -6728,6 +8003,12 @@
       "1f91a"
     ]
   },
+  "raised_eyebrow": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f928.png?v8",
+    "codepoints": [
+      "1f928"
+    ]
+  },
   "raised_hand": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/270b.png?v8",
     "codepoints": [
@@ -6760,9 +8041,10 @@
     ]
   },
   "raising_hand_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64b.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f64b-2640.png?v8",
     "codepoints": [
-      "1f64b"
+      "1f64b",
+      "2640"
     ]
   },
   "ram": {
@@ -6781,6 +8063,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f400.png?v8",
     "codepoints": [
       "1f400"
+    ]
+  },
+  "razor": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa92.png?v8",
+    "codepoints": [
+      "1fa92"
+    ]
+  },
+  "receipt": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9fe.png?v8",
+    "codepoints": [
+      "1f9fe"
     ]
   },
   "record_button": {
@@ -6805,6 +8099,32 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f534.png?v8",
     "codepoints": [
       "1f534"
+    ]
+  },
+  "red_envelope": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e7.png?v8",
+    "codepoints": [
+      "1f9e7"
+    ]
+  },
+  "red_haired_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f9b0.png?v8",
+    "codepoints": [
+      "1f468",
+      "1f9b0"
+    ]
+  },
+  "red_haired_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f9b0.png?v8",
+    "codepoints": [
+      "1f469",
+      "1f9b0"
+    ]
+  },
+  "red_square": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e5.png?v8",
+    "codepoints": [
+      "1f7e5"
     ]
   },
   "registered": {
@@ -6922,6 +8242,12 @@
       "1f48d"
     ]
   },
+  "ringed_planet": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa90.png?v8",
+    "codepoints": [
+      "1fa90"
+    ]
+  },
   "robot": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f916.png?v8",
     "codepoints": [
@@ -6944,6 +8270,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f644.png?v8",
     "codepoints": [
       "1f644"
+    ]
+  },
+  "roll_of_paper": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9fb.png?v8",
+    "codepoints": [
+      "1f9fb"
     ]
   },
   "roller_coaster": {
@@ -6996,9 +8328,10 @@
     ]
   },
   "rowing_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6a3.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6a3-2642.png?v8",
     "codepoints": [
-      "1f6a3"
+      "1f6a3",
+      "2642"
     ]
   },
   "rowing_woman": {
@@ -7034,9 +8367,10 @@
     ]
   },
   "running_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c3.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c3-2642.png?v8",
     "codepoints": [
-      "1f3c3"
+      "1f3c3",
+      "2642"
     ]
   },
   "running_shirt_with_sash": {
@@ -7065,6 +8399,18 @@
       "1f202"
     ]
   },
+  "safety_pin": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f7.png?v8",
+    "codepoints": [
+      "1f9f7"
+    ]
+  },
+  "safety_vest": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ba.png?v8",
+    "codepoints": [
+      "1f9ba"
+    ]
+  },
   "sagittarius": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/2650.png?v8",
     "codepoints": [
@@ -7081,6 +8427,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f376.png?v8",
     "codepoints": [
       "1f376"
+    ]
+  },
+  "salt": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c2.png?v8",
+    "codepoints": [
+      "1f9c2"
     ]
   },
   "samoa": {
@@ -7103,6 +8455,12 @@
       "1f461"
     ]
   },
+  "sandwich": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f96a.png?v8",
+    "codepoints": [
+      "1f96a"
+    ]
+  },
   "santa": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f385.png?v8",
     "codepoints": [
@@ -7116,6 +8474,12 @@
       "1f1f9"
     ]
   },
+  "sari": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f97b.png?v8",
+    "codepoints": [
+      "1f97b"
+    ]
+  },
   "sassy_man": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f481-2642.png?v8",
     "codepoints": [
@@ -7124,9 +8488,10 @@
     ]
   },
   "sassy_woman": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f481.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f481-2640.png?v8",
     "codepoints": [
-      "1f481"
+      "1f481",
+      "2640"
     ]
   },
   "satellite": {
@@ -7148,10 +8513,42 @@
       "1f1e6"
     ]
   },
+  "sauna_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d6-2642.png?v8",
+    "codepoints": [
+      "1f9d6",
+      "2642"
+    ]
+  },
+  "sauna_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d6.png?v8",
+    "codepoints": [
+      "1f9d6"
+    ]
+  },
+  "sauna_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d6-2640.png?v8",
+    "codepoints": [
+      "1f9d6",
+      "2640"
+    ]
+  },
+  "sauropod": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f995.png?v8",
+    "codepoints": [
+      "1f995"
+    ]
+  },
   "saxophone": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3b7.png?v8",
     "codepoints": [
       "1f3b7"
+    ]
+  },
+  "scarf": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e3.png?v8",
+    "codepoints": [
+      "1f9e3"
     ]
   },
   "school": {
@@ -7164,6 +8561,13 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f392.png?v8",
     "codepoints": [
       "1f392"
+    ]
+  },
+  "scientist": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f52c.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f52c"
     ]
   },
   "scissors": {
@@ -7182,6 +8586,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/264f.png?v8",
     "codepoints": [
       "264f"
+    ]
+  },
+  "scotland": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.png?v8",
+    "codepoints": [
+      "1f3f4",
+      "e0067",
+      "e0062",
+      "e0073",
+      "e0063",
+      "e0074",
+      "e007f"
     ]
   },
   "scream": {
@@ -7244,6 +8660,13 @@
     "codepoints": [
       "1f1f7",
       "1f1f8"
+    ]
+  },
+  "service_dog": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f415-1f9ba.png?v8",
+    "codepoints": [
+      "1f415",
+      "1f9ba"
     ]
   },
   "seven": {
@@ -7347,6 +8770,12 @@
       "1f6d2"
     ]
   },
+  "shorts": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa73.png?v8",
+    "codepoints": [
+      "1fa73"
+    ]
+  },
   "shower": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6bf.png?v8",
     "codepoints": [
@@ -7357,6 +8786,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f990.png?v8",
     "codepoints": [
       "1f990"
+    ]
+  },
+  "shrug": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f937.png?v8",
+    "codepoints": [
+      "1f937"
+    ]
+  },
+  "shushing_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f92b.png?v8",
+    "codepoints": [
+      "1f92b"
     ]
   },
   "sierra_leone": {
@@ -7379,6 +8820,13 @@
       "1f1ec"
     ]
   },
+  "singer": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f3a4.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f3a4"
+    ]
+  },
   "sint_maarten": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1fd.png?v8",
     "codepoints": [
@@ -7397,6 +8845,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f52f.png?v8",
     "codepoints": [
       "1f52f"
+    ]
+  },
+  "skateboard": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6f9.png?v8",
+    "codepoints": [
+      "1f6f9"
     ]
   },
   "ski": {
@@ -7421,6 +8875,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/2620.png?v8",
     "codepoints": [
       "2620"
+    ]
+  },
+  "skunk": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a8.png?v8",
+    "codepoints": [
+      "1f9a8"
+    ]
+  },
+  "sled": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6f7.png?v8",
+    "codepoints": [
+      "1f6f7"
     ]
   },
   "sleeping": {
@@ -7457,6 +8923,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3b0.png?v8",
     "codepoints": [
       "1f3b0"
+    ]
+  },
+  "sloth": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a5.png?v8",
+    "codepoints": [
+      "1f9a5"
     ]
   },
   "slovakia": {
@@ -7527,6 +8999,12 @@
       "1f63a"
     ]
   },
+  "smiling_face_with_three_hearts": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f970.png?v8",
+    "codepoints": [
+      "1f970"
+    ]
+  },
   "smiling_imp": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f608.png?v8",
     "codepoints": [
@@ -7593,6 +9071,12 @@
       "2603"
     ]
   },
+  "soap": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9fc.png?v8",
+    "codepoints": [
+      "1f9fc"
+    ]
+  },
   "sob": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f62d.png?v8",
     "codepoints": [
@@ -7603,6 +9087,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/26bd.png?v8",
     "codepoints": [
       "26bd"
+    ]
+  },
+  "socks": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9e6.png?v8",
+    "codepoints": [
+      "1f9e6"
+    ]
+  },
+  "softball": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f94e.png?v8",
+    "codepoints": [
+      "1f94e"
     ]
   },
   "solomon_islands": {
@@ -7754,6 +9250,12 @@
       "1f5d2"
     ]
   },
+  "sponge": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9fd.png?v8",
+    "codepoints": [
+      "1f9fd"
+    ]
+  },
   "spoon": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f944.png?v8",
     "codepoints": [
@@ -7765,9 +9267,6 @@
     "codepoints": [
       "1f991"
     ]
-  },
-  "squirrel": {
-    "src": "https://github.githubassets.com/images/icons/emoji/shipit.png?v8"
   },
   "sri_lanka": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f1-1f1f0.png?v8",
@@ -7804,6 +9303,13 @@
       "1f1e8"
     ]
   },
+  "st_martin": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f2-1f1eb.png?v8",
+    "codepoints": [
+      "1f1f2",
+      "1f1eb"
+    ]
+  },
   "st_pierre_miquelon": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f5-1f1f2.png?v8",
     "codepoints": [
@@ -7822,6 +9328,26 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3df.png?v8",
     "codepoints": [
       "1f3df"
+    ]
+  },
+  "standing_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9cd-2642.png?v8",
+    "codepoints": [
+      "1f9cd",
+      "2642"
+    ]
+  },
+  "standing_person": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9cd.png?v8",
+    "codepoints": [
+      "1f9cd"
+    ]
+  },
+  "standing_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9cd-2640.png?v8",
+    "codepoints": [
+      "1f9cd",
+      "2640"
     ]
   },
   "star": {
@@ -7848,6 +9374,12 @@
       "2721"
     ]
   },
+  "star_struck": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f929.png?v8",
+    "codepoints": [
+      "1f929"
+    ]
+  },
   "stars": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f320.png?v8",
     "codepoints": [
@@ -7870,6 +9402,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f682.png?v8",
     "codepoints": [
       "1f682"
+    ]
+  },
+  "stethoscope": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa7a.png?v8",
+    "codepoints": [
+      "1fa7a"
     ]
   },
   "stew": {
@@ -7924,6 +9462,13 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f61c.png?v8",
     "codepoints": [
       "1f61c"
+    ]
+  },
+  "student": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f393.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f393"
     ]
   },
   "studio_microphone": {
@@ -7999,6 +9544,46 @@
       "1f304"
     ]
   },
+  "superhero": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b8.png?v8",
+    "codepoints": [
+      "1f9b8"
+    ]
+  },
+  "superhero_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b8-2642.png?v8",
+    "codepoints": [
+      "1f9b8",
+      "2642"
+    ]
+  },
+  "superhero_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b8-2640.png?v8",
+    "codepoints": [
+      "1f9b8",
+      "2640"
+    ]
+  },
+  "supervillain": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b9.png?v8",
+    "codepoints": [
+      "1f9b9"
+    ]
+  },
+  "supervillain_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b9-2642.png?v8",
+    "codepoints": [
+      "1f9b9",
+      "2642"
+    ]
+  },
+  "supervillain_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b9-2640.png?v8",
+    "codepoints": [
+      "1f9b9",
+      "2640"
+    ]
+  },
   "surfer": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c4.png?v8",
     "codepoints": [
@@ -8006,9 +9591,10 @@
     ]
   },
   "surfing_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c4.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3c4-2642.png?v8",
     "codepoints": [
-      "1f3c4"
+      "1f3c4",
+      "2642"
     ]
   },
   "surfing_woman": {
@@ -8038,6 +9624,19 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f69f.png?v8",
     "codepoints": [
       "1f69f"
+    ]
+  },
+  "svalbard_jan_mayen": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f8-1f1ef.png?v8",
+    "codepoints": [
+      "1f1f8",
+      "1f1ef"
+    ]
+  },
+  "swan": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9a2.png?v8",
+    "codepoints": [
+      "1f9a2"
     ]
   },
   "swaziland": {
@@ -8078,6 +9677,12 @@
       "1f360"
     ]
   },
+  "swim_brief": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa72.png?v8",
+    "codepoints": [
+      "1fa72"
+    ]
+  },
   "swimmer": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ca.png?v8",
     "codepoints": [
@@ -8085,9 +9690,10 @@
     ]
   },
   "swimming_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ca.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3ca-2642.png?v8",
     "codepoints": [
-      "1f3ca"
+      "1f3ca",
+      "2642"
     ]
   },
   "swimming_woman": {
@@ -8129,6 +9735,12 @@
       "1f489"
     ]
   },
+  "t-rex": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f996.png?v8",
+    "codepoints": [
+      "1f996"
+    ]
+  },
   "taco": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f32e.png?v8",
     "codepoints": [
@@ -8153,6 +9765,12 @@
     "codepoints": [
       "1f1f9",
       "1f1ef"
+    ]
+  },
+  "takeout_box": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f961.png?v8",
+    "codepoints": [
+      "1f961"
     ]
   },
   "tanabata_tree": {
@@ -8192,6 +9810,26 @@
       "1f375"
     ]
   },
+  "teacher": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f3eb.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f3eb"
+    ]
+  },
+  "technologist": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d1-1f4bb.png?v8",
+    "codepoints": [
+      "1f9d1",
+      "1f4bb"
+    ]
+  },
+  "teddy_bear": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f8.png?v8",
+    "codepoints": [
+      "1f9f8"
+    ]
+  },
   "telephone": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/260e.png?v8",
     "codepoints": [
@@ -8222,6 +9860,12 @@
       "26fa"
     ]
   },
+  "test_tube": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9ea.png?v8",
+    "codepoints": [
+      "1f9ea"
+    ]
+  },
   "thailand": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f9-1f1ed.png?v8",
     "codepoints": [
@@ -8245,6 +9889,12 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f4ad.png?v8",
     "codepoints": [
       "1f4ad"
+    ]
+  },
+  "thread": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f5.png?v8",
+    "codepoints": [
+      "1f9f5"
     ]
   },
   "three": {
@@ -8310,10 +9960,17 @@
       "2642"
     ]
   },
-  "tipping_hand_woman": {
+  "tipping_hand_person": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f481.png?v8",
     "codepoints": [
       "1f481"
+    ]
+  },
+  "tipping_hand_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f481-2640.png?v8",
+    "codepoints": [
+      "1f481",
+      "2640"
     ]
   },
   "tired_face": {
@@ -8371,6 +10028,18 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f445.png?v8",
     "codepoints": [
       "1f445"
+    ]
+  },
+  "toolbox": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f0.png?v8",
+    "codepoints": [
+      "1f9f0"
+    ]
+  },
+  "tooth": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9b7.png?v8",
+    "codepoints": [
+      "1f9b7"
     ]
   },
   "top": {
@@ -8457,6 +10126,13 @@
     "codepoints": [
       "1f1f9",
       "1f1f9"
+    ]
+  },
+  "tristan_da_cunha": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1f9-1f1e6.png?v8",
+    "codepoints": [
+      "1f1f9",
+      "1f1e6"
     ]
   },
   "triumph": {
@@ -8717,6 +10393,13 @@
       "1f1ea"
     ]
   },
+  "united_nations": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1f3.png?v8",
+    "codepoints": [
+      "1f1fa",
+      "1f1f3"
+    ]
+  },
   "unlock": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f513.png?v8",
     "codepoints": [
@@ -8749,6 +10432,13 @@
       "1f1f8"
     ]
   },
+  "us_outlying_islands": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1f2.png?v8",
+    "codepoints": [
+      "1f1fa",
+      "1f1f2"
+    ]
+  },
   "us_virgin_islands": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f1fb-1f1ee.png?v8",
     "codepoints": [
@@ -8767,6 +10457,26 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/270c.png?v8",
     "codepoints": [
       "270c"
+    ]
+  },
+  "vampire": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9db.png?v8",
+    "codepoints": [
+      "1f9db"
+    ]
+  },
+  "vampire_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9db-2642.png?v8",
+    "codepoints": [
+      "1f9db",
+      "2642"
+    ]
+  },
+  "vampire_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9db-2640.png?v8",
+    "codepoints": [
+      "1f9db",
+      "2640"
     ]
   },
   "vanuatu": {
@@ -8851,6 +10561,12 @@
       "1f3d0"
     ]
   },
+  "vomiting_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f92e.png?v8",
+    "codepoints": [
+      "1f92e"
+    ]
+  },
   "vs": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f19a.png?v8",
     "codepoints": [
@@ -8863,6 +10579,24 @@
       "1f596"
     ]
   },
+  "waffle": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9c7.png?v8",
+    "codepoints": [
+      "1f9c7"
+    ]
+  },
+  "wales": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3f4-e0067-e0062-e0077-e006c-e0073-e007f.png?v8",
+    "codepoints": [
+      "1f3f4",
+      "e0067",
+      "e0062",
+      "e0077",
+      "e006c",
+      "e0073",
+      "e007f"
+    ]
+  },
   "walking": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6b6.png?v8",
     "codepoints": [
@@ -8870,9 +10604,10 @@
     ]
   },
   "walking_man": {
-    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6b6.png?v8",
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f6b6-2642.png?v8",
     "codepoints": [
-      "1f6b6"
+      "1f6b6",
+      "2642"
     ]
   },
   "walking_woman": {
@@ -8925,6 +10660,12 @@
       "1f403"
     ]
   },
+  "water_polo": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f93d.png?v8",
+    "codepoints": [
+      "1f93d"
+    ]
+  },
   "watermelon": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f349.png?v8",
     "codepoints": [
@@ -8973,10 +10714,17 @@
       "1f492"
     ]
   },
-  "weight_lifting_man": {
+  "weight_lifting": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3cb.png?v8",
     "codepoints": [
       "1f3cb"
+    ]
+  },
+  "weight_lifting_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f3cb-2642.png?v8",
+    "codepoints": [
+      "1f3cb",
+      "2642"
     ]
   },
   "weight_lifting_woman": {
@@ -9039,6 +10787,26 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f4ae.png?v8",
     "codepoints": [
       "1f4ae"
+    ]
+  },
+  "white_haired_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f468-1f9b3.png?v8",
+    "codepoints": [
+      "1f468",
+      "1f9b3"
+    ]
+  },
+  "white_haired_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f9b3.png?v8",
+    "codepoints": [
+      "1f469",
+      "1f9b3"
+    ]
+  },
+  "white_heart": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f90d.png?v8",
+    "codepoints": [
+      "1f90d"
     ]
   },
   "white_large_square": {
@@ -9141,6 +10909,12 @@
       "1f373"
     ]
   },
+  "woman_dancing": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f483.png?v8",
+    "codepoints": [
+      "1f483"
+    ]
+  },
   "woman_facepalming": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f926-2640.png?v8",
     "codepoints": [
@@ -9174,6 +10948,20 @@
     "codepoints": [
       "1f469",
       "2695"
+    ]
+  },
+  "woman_in_manual_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f9bd.png?v8",
+    "codepoints": [
+      "1f469",
+      "1f9bd"
+    ]
+  },
+  "woman_in_motorized_wheelchair": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f9bc.png?v8",
+    "codepoints": [
+      "1f469",
+      "1f9bc"
     ]
   },
   "woman_judge": {
@@ -9267,6 +11055,19 @@
       "1f4bb"
     ]
   },
+  "woman_with_headscarf": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9d5.png?v8",
+    "codepoints": [
+      "1f9d5"
+    ]
+  },
+  "woman_with_probing_cane": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f469-1f9af.png?v8",
+    "codepoints": [
+      "1f469",
+      "1f9af"
+    ]
+  },
   "woman_with_turban": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f473-2640.png?v8",
     "codepoints": [
@@ -9299,6 +11100,12 @@
       "1f6ba"
     ]
   },
+  "woozy_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f974.png?v8",
+    "codepoints": [
+      "1f974"
+    ]
+  },
   "world_map": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f5fa.png?v8",
     "codepoints": [
@@ -9317,6 +11124,12 @@
       "1f527"
     ]
   },
+  "wrestling": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f93c.png?v8",
+    "codepoints": [
+      "1f93c"
+    ]
+  },
   "writing_hand": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/270d.png?v8",
     "codepoints": [
@@ -9329,10 +11142,34 @@
       "274c"
     ]
   },
+  "yarn": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9f6.png?v8",
+    "codepoints": [
+      "1f9f6"
+    ]
+  },
+  "yawning_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f971.png?v8",
+    "codepoints": [
+      "1f971"
+    ]
+  },
+  "yellow_circle": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e1.png?v8",
+    "codepoints": [
+      "1f7e1"
+    ]
+  },
   "yellow_heart": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f49b.png?v8",
     "codepoints": [
       "1f49b"
+    ]
+  },
+  "yellow_square": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f7e8.png?v8",
+    "codepoints": [
+      "1f7e8"
     ]
   },
   "yemen": {
@@ -9354,6 +11191,12 @@
       "262f"
     ]
   },
+  "yo_yo": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1fa80.png?v8",
+    "codepoints": [
+      "1fa80"
+    ]
+  },
   "yum": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f60b.png?v8",
     "codepoints": [
@@ -9367,10 +11210,22 @@
       "1f1f2"
     ]
   },
+  "zany_face": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f92a.png?v8",
+    "codepoints": [
+      "1f92a"
+    ]
+  },
   "zap": {
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/26a1.png?v8",
     "codepoints": [
       "26a1"
+    ]
+  },
+  "zebra": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f993.png?v8",
+    "codepoints": [
+      "1f993"
     ]
   },
   "zero": {
@@ -9391,6 +11246,26 @@
     "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f910.png?v8",
     "codepoints": [
       "1f910"
+    ]
+  },
+  "zombie": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9df.png?v8",
+    "codepoints": [
+      "1f9df"
+    ]
+  },
+  "zombie_man": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9df-2642.png?v8",
+    "codepoints": [
+      "1f9df",
+      "2642"
+    ]
+  },
+  "zombie_woman": {
+    "src": "https://github.githubassets.com/images/icons/emoji/unicode/1f9df-2640.png?v8",
+    "codepoints": [
+      "1f9df",
+      "2640"
     ]
   },
   "zzz": {
