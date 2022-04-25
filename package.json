@@ -21,7 +21,7 @@
   "dependencies": {
     "jsdom": "^16.4.0",
     "lodash": "^4.17.20",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.1.1",
     "random-ua": "^0.0.6"
   }
 }
