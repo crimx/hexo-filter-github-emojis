@@ -1,7 +1,6 @@
 "use strict";
 /* global hexo */
 
-const _ = require("lodash");
 const { JSDOM } = require("jsdom");
 
 const options = Object.assign(
@@ -71,11 +70,11 @@ function replaceColons(node) {
 
 function loadCustomEmojis(customEmojis) {
   // JSON string
-  if (_.isString(customEmojis)) {
+  if (typeof customEmojis === "string") {
     try {
       customEmojis = JSON.parse(customEmojis);
       Object.keys(customEmojis).forEach((name) => {
-        if (_.isString(customEmojis[name])) {
+        if (typeof customEmojis[name] === "string") {
           customEmojis[name] = {
             src: customEmojis[name],
           };
@@ -89,7 +88,7 @@ function loadCustomEmojis(customEmojis) {
     }
   }
 
-  if (!_.isObject(customEmojis)) {
+  if (typeof customEmojis !== "object" || customEmojis === null) {
     customEmojis = {};
   }
 
@@ -98,7 +97,7 @@ function loadCustomEmojis(customEmojis) {
     emojis[name] = Object.assign(
       {},
       emoji,
-      emoji.codepoints && !_.isArray(emoji.codepoints)
+      emoji.codepoints && !Array.isArray(emoji.codepoints)
         ? { codepoints: emoji.codepoints.split(" ") }
         : {}
     );
@@ -109,7 +108,7 @@ function loadCustomEmojis(customEmojis) {
 function renderEmoji(name) {
   if (!emojis[name]) return name;
 
-  const styles = _.isObject(options.styles)
+  const styles = typeof options.styles === "object" && options.styles !== null
     ? ` style="${Object.keys(options.styles)
         .map((k) => k + ":" + options.styles[k])
         .join(";")}"`
