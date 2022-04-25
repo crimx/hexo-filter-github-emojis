@@ -1,6 +1,6 @@
 {
   "name": "hexo-filter-github-emojis",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "A Hexo plugin that adds emojis support, using Github Emojis API",
   "main": "index",
   "repository": "crimx/hexo-filter-github-emojis",
